@@ -77,90 +77,30 @@ include CMakeFiles/Fase1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Fase1.dir/flags.make
 
-CMakeFiles/Fase1.dir/main.cpp.o: CMakeFiles/Fase1.dir/flags.make
-CMakeFiles/Fase1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Fase1.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Fase1.dir/main.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/main.cpp"
+CMakeFiles/Fase1.dir/Gerador/gerador.cpp.o: CMakeFiles/Fase1.dir/flags.make
+CMakeFiles/Fase1.dir/Gerador/gerador.cpp.o: ../Gerador/gerador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Fase1.dir/Gerador/gerador.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Fase1.dir/Gerador/gerador.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/gerador.cpp"
 
-CMakeFiles/Fase1.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fase1.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/main.cpp" > CMakeFiles/Fase1.dir/main.cpp.i
+CMakeFiles/Fase1.dir/Gerador/gerador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fase1.dir/Gerador/gerador.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/gerador.cpp" > CMakeFiles/Fase1.dir/Gerador/gerador.cpp.i
 
-CMakeFiles/Fase1.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fase1.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/main.cpp" -o CMakeFiles/Fase1.dir/main.cpp.s
-
-CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.o: CMakeFiles/Fase1.dir/flags.make
-CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.o: ../tinyXML/tinyxml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.cpp"
-
-CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.cpp" > CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.i
-
-CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.cpp" -o CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.s
-
-CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.o: CMakeFiles/Fase1.dir/flags.make
-CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.o: ../tinyXML/tinystr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.cpp"
-
-CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.cpp" > CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.i
-
-CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.cpp" -o CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.s
-
-CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.o: CMakeFiles/Fase1.dir/flags.make
-CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.o: ../tinyXML/tinyxmlerror.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlerror.cpp"
-
-CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlerror.cpp" > CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.i
-
-CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlerror.cpp" -o CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.s
-
-CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.o: CMakeFiles/Fase1.dir/flags.make
-CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.o: ../tinyXML/tinyxmlparser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlparser.cpp"
-
-CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlparser.cpp" > CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.i
-
-CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlparser.cpp" -o CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.s
+CMakeFiles/Fase1.dir/Gerador/gerador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fase1.dir/Gerador/gerador.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/gerador.cpp" -o CMakeFiles/Fase1.dir/Gerador/gerador.cpp.s
 
 # Object files for target Fase1
 Fase1_OBJECTS = \
-"CMakeFiles/Fase1.dir/main.cpp.o" \
-"CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.o" \
-"CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.o" \
-"CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.o" \
-"CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.o"
+"CMakeFiles/Fase1.dir/Gerador/gerador.cpp.o"
 
 # External object files for target Fase1
 Fase1_EXTERNAL_OBJECTS =
 
-Fase1: CMakeFiles/Fase1.dir/main.cpp.o
-Fase1: CMakeFiles/Fase1.dir/tinyXML/tinyxml.cpp.o
-Fase1: CMakeFiles/Fase1.dir/tinyXML/tinystr.cpp.o
-Fase1: CMakeFiles/Fase1.dir/tinyXML/tinyxmlerror.cpp.o
-Fase1: CMakeFiles/Fase1.dir/tinyXML/tinyxmlparser.cpp.o
+Fase1: CMakeFiles/Fase1.dir/Gerador/gerador.cpp.o
 Fase1: CMakeFiles/Fase1.dir/build.make
 Fase1: CMakeFiles/Fase1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Fase1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Fase1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fase1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
