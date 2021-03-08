@@ -57,27 +57,27 @@ include CMakeFiles/motorLib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/motorLib.dir/flags.make
 
-CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.o: CMakeFiles/motorLib.dir/flags.make
-CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.o: ../Motor/drawFunctions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/drawFunctions.cpp"
+CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o: CMakeFiles/motorLib.dir/flags.make
+CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o: ../src/Motor/drawFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.cpp"
 
-CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/drawFunctions.cpp" > CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.i
+CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.cpp" > CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.i
 
-CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/drawFunctions.cpp" -o CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.s
+CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.cpp" -o CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.s
 
 # Object files for target motorLib
 motorLib_OBJECTS = \
-"CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.o"
+"CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o"
 
 # External object files for target motorLib
 motorLib_EXTERNAL_OBJECTS =
 
-libmotorLib.a: CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.o
+libmotorLib.a: CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o
 libmotorLib.a: CMakeFiles/motorLib.dir/build.make
 libmotorLib.a: CMakeFiles/motorLib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmotorLib.a"

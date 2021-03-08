@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.o"
+  "CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o"
   "libmotorLib.a"
   "libmotorLib.pdb"
 )

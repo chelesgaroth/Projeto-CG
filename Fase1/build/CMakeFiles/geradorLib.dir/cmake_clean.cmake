@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.o"
+  "CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o"
   "libgeradorLib.a"
   "libgeradorLib.pdb"
 )

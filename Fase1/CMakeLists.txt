@@ -6,26 +6,26 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
 
-add_executable(motor Motor/motor.cpp)
-add_executable(gerador Gerador/gerador.cpp)
+add_executable(motor src/Motor/motor.cpp)
+add_executable(gerador src/Gerador/gerador.cpp)
 
 add_library(
         Lib
-        tinyXML/tinystr.cpp
-        tinyXML/tinyxml.cpp
-        tinyXML/tinyxmlerror.cpp
-        tinyXML/tinyxmlparser.cpp
+        src/tinyXML/tinystr.cpp
+        src/tinyXML/tinyxml.cpp
+        src/tinyXML/tinyxmlerror.cpp
+        src/tinyXML/tinyxmlparser.cpp
 )
 
 add_library(
         motorLib
-        Motor/drawFunctions.cpp
-        Motor/drawFunctions.hpp
+        src/Motor/drawFunctions.cpp
+        src/Motor/drawFunctions.hpp
 )
 
 add_library(
         geradorLib
-        Gerador/calculaVertices.cpp
+        src/Gerador/calculaVertices.cpp
 )
 
 target_link_libraries(gerador geradorLib)

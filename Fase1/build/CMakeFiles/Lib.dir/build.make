@@ -57,72 +57,72 @@ include CMakeFiles/Lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Lib.dir/flags.make
 
-CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.o: CMakeFiles/Lib.dir/flags.make
-CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.o: ../tinyXML/tinystr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.cpp"
+CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.o: CMakeFiles/Lib.dir/flags.make
+CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.o: ../src/tinyXML/tinystr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.cpp"
 
-CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.cpp" > CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.i
+CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.cpp" > CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.i
 
-CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.cpp" -o CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.s
+CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.cpp" -o CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.s
 
-CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.o: CMakeFiles/Lib.dir/flags.make
-CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.o: ../tinyXML/tinyxml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.cpp"
+CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.o: CMakeFiles/Lib.dir/flags.make
+CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.o: ../src/tinyXML/tinyxml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.cpp"
 
-CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.cpp" > CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.i
+CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.cpp" > CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.i
 
-CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.cpp" -o CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.s
+CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.cpp" -o CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.s
 
-CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.o: CMakeFiles/Lib.dir/flags.make
-CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.o: ../tinyXML/tinyxmlerror.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlerror.cpp"
+CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.o: CMakeFiles/Lib.dir/flags.make
+CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.o: ../src/tinyXML/tinyxmlerror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxmlerror.cpp"
 
-CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlerror.cpp" > CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.i
+CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxmlerror.cpp" > CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.i
 
-CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlerror.cpp" -o CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.s
+CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxmlerror.cpp" -o CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.s
 
-CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.o: CMakeFiles/Lib.dir/flags.make
-CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.o: ../tinyXML/tinyxmlparser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlparser.cpp"
+CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.o: CMakeFiles/Lib.dir/flags.make
+CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.o: ../src/tinyXML/tinyxmlparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxmlparser.cpp"
 
-CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlparser.cpp" > CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.i
+CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxmlparser.cpp" > CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.i
 
-CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlparser.cpp" -o CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.s
+CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxmlparser.cpp" -o CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.s
 
 # Object files for target Lib
 Lib_OBJECTS = \
-"CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.o" \
-"CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.o" \
-"CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.o" \
-"CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.o"
+"CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.o" \
+"CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.o" \
+"CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.o" \
+"CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.o"
 
 # External object files for target Lib
 Lib_EXTERNAL_OBJECTS =
 
-libLib.a: CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.o
-libLib.a: CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.o
-libLib.a: CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.o
-libLib.a: CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.o
+libLib.a: CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.o
+libLib.a: CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.o
+libLib.a: CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.o
+libLib.a: CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.o
 libLib.a: CMakeFiles/Lib.dir/build.make
 libLib.a: CMakeFiles/Lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libLib.a"

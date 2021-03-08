@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Fase1.dir/Gerador/gerador.cpp.o  -o Fase1 

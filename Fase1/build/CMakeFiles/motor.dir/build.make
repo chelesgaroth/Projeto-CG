@@ -57,27 +57,27 @@ include CMakeFiles/motor.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/motor.dir/flags.make
 
-CMakeFiles/motor.dir/Motor/motor.cpp.o: CMakeFiles/motor.dir/flags.make
-CMakeFiles/motor.dir/Motor/motor.cpp.o: ../Motor/motor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor.dir/Motor/motor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motor.dir/Motor/motor.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/motor.cpp"
+CMakeFiles/motor.dir/src/Motor/motor.cpp.o: CMakeFiles/motor.dir/flags.make
+CMakeFiles/motor.dir/src/Motor/motor.cpp.o: ../src/Motor/motor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/motor.dir/src/Motor/motor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/motor.dir/src/Motor/motor.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/motor.cpp"
 
-CMakeFiles/motor.dir/Motor/motor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor.dir/Motor/motor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/motor.cpp" > CMakeFiles/motor.dir/Motor/motor.cpp.i
+CMakeFiles/motor.dir/src/Motor/motor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/motor.dir/src/Motor/motor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/motor.cpp" > CMakeFiles/motor.dir/src/Motor/motor.cpp.i
 
-CMakeFiles/motor.dir/Motor/motor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor.dir/Motor/motor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/motor.cpp" -o CMakeFiles/motor.dir/Motor/motor.cpp.s
+CMakeFiles/motor.dir/src/Motor/motor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/motor.dir/src/Motor/motor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/motor.cpp" -o CMakeFiles/motor.dir/src/Motor/motor.cpp.s
 
 # Object files for target motor
 motor_OBJECTS = \
-"CMakeFiles/motor.dir/Motor/motor.cpp.o"
+"CMakeFiles/motor.dir/src/Motor/motor.cpp.o"
 
 # External object files for target motor
 motor_EXTERNAL_OBJECTS =
 
-motor: CMakeFiles/motor.dir/Motor/motor.cpp.o
+motor: CMakeFiles/motor.dir/src/Motor/motor.cpp.o
 motor: CMakeFiles/motor.dir/build.make
 motor: libmotorLib.a
 motor: libLib.a

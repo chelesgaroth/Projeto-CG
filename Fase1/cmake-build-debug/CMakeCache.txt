@@ -221,34 +221,10 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Fase1_1_BINARY_DIR:STATIC=/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug
-
-//Value Computed by CMake
-Fase1_1_SOURCE_DIR:STATIC=/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1
-
-//Value Computed by CMake
 Fase1_BINARY_DIR:STATIC=/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug
 
 //Value Computed by CMake
 Fase1_SOURCE_DIR:STATIC=/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1
-
-//The directory containing a CMake configuration file for GLEW.
-GLEW_DIR:PATH=GLEW_DIR-NOTFOUND
-
-//Path to a file.
-GLEW_INCLUDE_DIR:PATH=GLEW_INCLUDE_DIR-NOTFOUND
-
-//Path to a library.
-GLEW_SHARED_LIBRARY_DEBUG:FILEPATH=GLEW_SHARED_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-GLEW_SHARED_LIBRARY_RELEASE:FILEPATH=GLEW_SHARED_LIBRARY_RELEASE-NOTFOUND
-
-//Path to a library.
-GLEW_STATIC_LIBRARY_DEBUG:FILEPATH=GLEW_STATIC_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-GLEW_STATIC_LIBRARY_RELEASE:FILEPATH=GLEW_STATIC_LIBRARY_RELEASE-NOTFOUND
 
 //Path to a file.
 GLUT_INCLUDE_DIR:PATH=/usr/include
@@ -455,16 +431,6 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_GLUT:INTERNAL=[/usr/lib/x86_64-linux-gnu/libglut.so][/usr/include][v()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
-//ADVANCED property for variable: GLEW_INCLUDE_DIR
-GLEW_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GLEW_SHARED_LIBRARY_DEBUG
-GLEW_SHARED_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GLEW_SHARED_LIBRARY_RELEASE
-GLEW_SHARED_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GLEW_STATIC_LIBRARY_DEBUG
-GLEW_STATIC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: GLEW_STATIC_LIBRARY_RELEASE
-GLEW_STATIC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLUT_INCLUDE_DIR
 GLUT_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLUT_Xi_LIBRARY

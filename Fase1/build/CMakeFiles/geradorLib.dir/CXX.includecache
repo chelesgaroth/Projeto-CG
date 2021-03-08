@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/calculaVertices.cpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/calculaVertices.cpp
 string
 -
 vector

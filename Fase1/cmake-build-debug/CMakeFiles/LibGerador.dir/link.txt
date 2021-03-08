@@ -1,2 +1,0 @@
-/usr/bin/ar qc libLibGerador.a  CMakeFiles/LibGerador.dir/Gerador/calculaVertices.cpp.o
-/usr/bin/ranlib libLibGerador.a

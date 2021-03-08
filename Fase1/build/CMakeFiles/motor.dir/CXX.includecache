@@ -6,3 +6,51 @@
 
 #IncludeRegexTransform: 
 
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.hpp
+cstdlib
+-
+vector
+-
+iostream
+-
+fstream
+-
+string
+-
+../tinyXML/tinyxml.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.h
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/motor.cpp
+drawFunctions.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.hpp
+GLUT/glut.h
+-
+GL/glut.h
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.h
+assert.h
+-
+string.h
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.h
+ctype.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+string
+-
+iostream
+-
+sstream
+-
+tinystr.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.h
+

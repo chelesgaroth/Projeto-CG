@@ -57,27 +57,27 @@ include CMakeFiles/geradorLib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/geradorLib.dir/flags.make
 
-CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.o: CMakeFiles/geradorLib.dir/flags.make
-CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.o: ../Gerador/calculaVertices.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/calculaVertices.cpp"
+CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o: CMakeFiles/geradorLib.dir/flags.make
+CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o: ../src/Gerador/calculaVertices.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/calculaVertices.cpp"
 
-CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/calculaVertices.cpp" > CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.i
+CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/calculaVertices.cpp" > CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.i
 
-CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/calculaVertices.cpp" -o CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.s
+CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/calculaVertices.cpp" -o CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.s
 
 # Object files for target geradorLib
 geradorLib_OBJECTS = \
-"CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.o"
+"CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o"
 
 # External object files for target geradorLib
 geradorLib_EXTERNAL_OBJECTS =
 
-libgeradorLib.a: CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.o
+libgeradorLib.a: CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o
 libgeradorLib.a: CMakeFiles/geradorLib.dir/build.make
 libgeradorLib.a: CMakeFiles/geradorLib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgeradorLib.a"

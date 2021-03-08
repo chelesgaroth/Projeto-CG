@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/drawFunctions.cpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.cpp
 drawFunctions.hpp
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/drawFunctions.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.hpp
 GLUT/glut.h
 -
 GL/glut.h
 -
 
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/drawFunctions.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.hpp
 cstdlib
 -
 vector
@@ -26,15 +26,15 @@ fstream
 string
 -
 ../tinyXML/tinyxml.h
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.h
 
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.h
 assert.h
 -
 string.h
 -
 
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.h
 ctype.h
 -
 stdio.h
@@ -52,5 +52,5 @@ iostream
 sstream
 -
 tinystr.h
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.h
 

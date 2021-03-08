@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.o"
-  "CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.o"
-  "CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.o"
-  "CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.o"
+  "CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.o"
+  "CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.o"
+  "CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.o"
+  "CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.o"
   "libLib.a"
   "libLib.pdb"
 )
