@@ -7,11 +7,21 @@
 #IncludeRegexTransform: 
 
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/calculaVertices.cpp
-string
+cmath
+-
+calculaVertices.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/calculaVertices.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/calculaVertices.hpp
+cstdlib
 -
 vector
 -
-math.h
+string
+-
+GLUT/glut.h
+-
+GL/glut.h
 -
 
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/gerador.cpp

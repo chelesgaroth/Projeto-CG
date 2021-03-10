@@ -1,16 +1,33 @@
-#ifndef PROJETOCG_CALCULAVERTICES_H
-#define PROJETOCG_CALCULAVERTICES_H
-#include <string>
+#include <cstdlib>
 #include <vector>
+#include <string>
 
-namespace calculaVertices {
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
+#include <GL/glut.h>
+#endif
 
-    vector<point> plane(float x, float z, string ficheiro);
-    vector<point> box(float x, float y, float z, int camadas, string ficheiro);
-    vector<point> sphere(float raio, int stacks, int slices, string ficheiro);
-    void cone(float raio, float altura, int slices, int stacks, string ficheiro);
+namespace generate
+{
+    struct point {
+        float x;
+        float y;
+        float z;
+    };
 
+    class figure {
+        std::vector<point> pontos;
+
+    public:
+        void addPoint(float, float, float);
+        std::vector<point> getVector();
+        void setVector(std::vector<point>);
+    };
+
+
+    figure createPlane(float, float);
+    figure createBox(float, float, float, int);
+    figure createSphere(float, int, int);
+    figure createCone(float, float, int, int);
 }
-
-
-#endif //PROJETOCG_CALCULAVERTICES_H

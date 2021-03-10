@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libLibMotor.a"
+  "libLib.a"
 )

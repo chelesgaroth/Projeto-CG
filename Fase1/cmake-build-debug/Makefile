@@ -195,221 +195,221 @@ Lib/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/build
 .PHONY : Lib/fast
 
-Gerador/calculaVertices.o: Gerador/calculaVertices.cpp.o
+src/Gerador/calculaVertices.o: src/Gerador/calculaVertices.cpp.o
 
-.PHONY : Gerador/calculaVertices.o
-
-# target to build an object file
-Gerador/calculaVertices.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/geradorLib.dir/build.make CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.o
-.PHONY : Gerador/calculaVertices.cpp.o
-
-Gerador/calculaVertices.i: Gerador/calculaVertices.cpp.i
-
-.PHONY : Gerador/calculaVertices.i
-
-# target to preprocess a source file
-Gerador/calculaVertices.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/geradorLib.dir/build.make CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.i
-.PHONY : Gerador/calculaVertices.cpp.i
-
-Gerador/calculaVertices.s: Gerador/calculaVertices.cpp.s
-
-.PHONY : Gerador/calculaVertices.s
-
-# target to generate assembly for a file
-Gerador/calculaVertices.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/geradorLib.dir/build.make CMakeFiles/geradorLib.dir/Gerador/calculaVertices.cpp.s
-.PHONY : Gerador/calculaVertices.cpp.s
-
-Gerador/gerador.o: Gerador/gerador.cpp.o
-
-.PHONY : Gerador/gerador.o
+.PHONY : src/Gerador/calculaVertices.o
 
 # target to build an object file
-Gerador/gerador.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gerador.dir/build.make CMakeFiles/gerador.dir/Gerador/gerador.cpp.o
-.PHONY : Gerador/gerador.cpp.o
+src/Gerador/calculaVertices.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geradorLib.dir/build.make CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o
+.PHONY : src/Gerador/calculaVertices.cpp.o
 
-Gerador/gerador.i: Gerador/gerador.cpp.i
+src/Gerador/calculaVertices.i: src/Gerador/calculaVertices.cpp.i
 
-.PHONY : Gerador/gerador.i
+.PHONY : src/Gerador/calculaVertices.i
 
 # target to preprocess a source file
-Gerador/gerador.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gerador.dir/build.make CMakeFiles/gerador.dir/Gerador/gerador.cpp.i
-.PHONY : Gerador/gerador.cpp.i
+src/Gerador/calculaVertices.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geradorLib.dir/build.make CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.i
+.PHONY : src/Gerador/calculaVertices.cpp.i
 
-Gerador/gerador.s: Gerador/gerador.cpp.s
+src/Gerador/calculaVertices.s: src/Gerador/calculaVertices.cpp.s
 
-.PHONY : Gerador/gerador.s
+.PHONY : src/Gerador/calculaVertices.s
 
 # target to generate assembly for a file
-Gerador/gerador.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gerador.dir/build.make CMakeFiles/gerador.dir/Gerador/gerador.cpp.s
-.PHONY : Gerador/gerador.cpp.s
+src/Gerador/calculaVertices.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geradorLib.dir/build.make CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.s
+.PHONY : src/Gerador/calculaVertices.cpp.s
 
-Motor/drawFunctions.o: Motor/drawFunctions.cpp.o
+src/Gerador/gerador.o: src/Gerador/gerador.cpp.o
 
-.PHONY : Motor/drawFunctions.o
+.PHONY : src/Gerador/gerador.o
 
 # target to build an object file
-Motor/drawFunctions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motorLib.dir/build.make CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.o
-.PHONY : Motor/drawFunctions.cpp.o
+src/Gerador/gerador.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gerador.dir/build.make CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o
+.PHONY : src/Gerador/gerador.cpp.o
 
-Motor/drawFunctions.i: Motor/drawFunctions.cpp.i
+src/Gerador/gerador.i: src/Gerador/gerador.cpp.i
 
-.PHONY : Motor/drawFunctions.i
+.PHONY : src/Gerador/gerador.i
 
 # target to preprocess a source file
-Motor/drawFunctions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motorLib.dir/build.make CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.i
-.PHONY : Motor/drawFunctions.cpp.i
+src/Gerador/gerador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gerador.dir/build.make CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.i
+.PHONY : src/Gerador/gerador.cpp.i
 
-Motor/drawFunctions.s: Motor/drawFunctions.cpp.s
+src/Gerador/gerador.s: src/Gerador/gerador.cpp.s
 
-.PHONY : Motor/drawFunctions.s
+.PHONY : src/Gerador/gerador.s
 
 # target to generate assembly for a file
-Motor/drawFunctions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motorLib.dir/build.make CMakeFiles/motorLib.dir/Motor/drawFunctions.cpp.s
-.PHONY : Motor/drawFunctions.cpp.s
+src/Gerador/gerador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gerador.dir/build.make CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.s
+.PHONY : src/Gerador/gerador.cpp.s
 
-Motor/motor.o: Motor/motor.cpp.o
+src/Motor/drawFunctions.o: src/Motor/drawFunctions.cpp.o
 
-.PHONY : Motor/motor.o
+.PHONY : src/Motor/drawFunctions.o
 
 # target to build an object file
-Motor/motor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/Motor/motor.cpp.o
-.PHONY : Motor/motor.cpp.o
+src/Motor/drawFunctions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motorLib.dir/build.make CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o
+.PHONY : src/Motor/drawFunctions.cpp.o
 
-Motor/motor.i: Motor/motor.cpp.i
+src/Motor/drawFunctions.i: src/Motor/drawFunctions.cpp.i
 
-.PHONY : Motor/motor.i
+.PHONY : src/Motor/drawFunctions.i
 
 # target to preprocess a source file
-Motor/motor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/Motor/motor.cpp.i
-.PHONY : Motor/motor.cpp.i
+src/Motor/drawFunctions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motorLib.dir/build.make CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.i
+.PHONY : src/Motor/drawFunctions.cpp.i
 
-Motor/motor.s: Motor/motor.cpp.s
+src/Motor/drawFunctions.s: src/Motor/drawFunctions.cpp.s
 
-.PHONY : Motor/motor.s
+.PHONY : src/Motor/drawFunctions.s
 
 # target to generate assembly for a file
-Motor/motor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/Motor/motor.cpp.s
-.PHONY : Motor/motor.cpp.s
+src/Motor/drawFunctions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motorLib.dir/build.make CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.s
+.PHONY : src/Motor/drawFunctions.cpp.s
 
-tinyXML/tinystr.o: tinyXML/tinystr.cpp.o
+src/Motor/motor.o: src/Motor/motor.cpp.o
 
-.PHONY : tinyXML/tinystr.o
+.PHONY : src/Motor/motor.o
 
 # target to build an object file
-tinyXML/tinystr.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.o
-.PHONY : tinyXML/tinystr.cpp.o
+src/Motor/motor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/src/Motor/motor.cpp.o
+.PHONY : src/Motor/motor.cpp.o
 
-tinyXML/tinystr.i: tinyXML/tinystr.cpp.i
+src/Motor/motor.i: src/Motor/motor.cpp.i
 
-.PHONY : tinyXML/tinystr.i
+.PHONY : src/Motor/motor.i
 
 # target to preprocess a source file
-tinyXML/tinystr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.i
-.PHONY : tinyXML/tinystr.cpp.i
+src/Motor/motor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/src/Motor/motor.cpp.i
+.PHONY : src/Motor/motor.cpp.i
 
-tinyXML/tinystr.s: tinyXML/tinystr.cpp.s
+src/Motor/motor.s: src/Motor/motor.cpp.s
 
-.PHONY : tinyXML/tinystr.s
+.PHONY : src/Motor/motor.s
 
 # target to generate assembly for a file
-tinyXML/tinystr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinystr.cpp.s
-.PHONY : tinyXML/tinystr.cpp.s
+src/Motor/motor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/src/Motor/motor.cpp.s
+.PHONY : src/Motor/motor.cpp.s
 
-tinyXML/tinyxml.o: tinyXML/tinyxml.cpp.o
+src/tinyXML/tinystr.o: src/tinyXML/tinystr.cpp.o
 
-.PHONY : tinyXML/tinyxml.o
+.PHONY : src/tinyXML/tinystr.o
 
 # target to build an object file
-tinyXML/tinyxml.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.o
-.PHONY : tinyXML/tinyxml.cpp.o
+src/tinyXML/tinystr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.o
+.PHONY : src/tinyXML/tinystr.cpp.o
 
-tinyXML/tinyxml.i: tinyXML/tinyxml.cpp.i
+src/tinyXML/tinystr.i: src/tinyXML/tinystr.cpp.i
 
-.PHONY : tinyXML/tinyxml.i
+.PHONY : src/tinyXML/tinystr.i
 
 # target to preprocess a source file
-tinyXML/tinyxml.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.i
-.PHONY : tinyXML/tinyxml.cpp.i
+src/tinyXML/tinystr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.i
+.PHONY : src/tinyXML/tinystr.cpp.i
 
-tinyXML/tinyxml.s: tinyXML/tinyxml.cpp.s
+src/tinyXML/tinystr.s: src/tinyXML/tinystr.cpp.s
 
-.PHONY : tinyXML/tinyxml.s
+.PHONY : src/tinyXML/tinystr.s
 
 # target to generate assembly for a file
-tinyXML/tinyxml.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinyxml.cpp.s
-.PHONY : tinyXML/tinyxml.cpp.s
+src/tinyXML/tinystr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinystr.cpp.s
+.PHONY : src/tinyXML/tinystr.cpp.s
 
-tinyXML/tinyxmlerror.o: tinyXML/tinyxmlerror.cpp.o
+src/tinyXML/tinyxml.o: src/tinyXML/tinyxml.cpp.o
 
-.PHONY : tinyXML/tinyxmlerror.o
+.PHONY : src/tinyXML/tinyxml.o
 
 # target to build an object file
-tinyXML/tinyxmlerror.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.o
-.PHONY : tinyXML/tinyxmlerror.cpp.o
+src/tinyXML/tinyxml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.o
+.PHONY : src/tinyXML/tinyxml.cpp.o
 
-tinyXML/tinyxmlerror.i: tinyXML/tinyxmlerror.cpp.i
+src/tinyXML/tinyxml.i: src/tinyXML/tinyxml.cpp.i
 
-.PHONY : tinyXML/tinyxmlerror.i
+.PHONY : src/tinyXML/tinyxml.i
 
 # target to preprocess a source file
-tinyXML/tinyxmlerror.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.i
-.PHONY : tinyXML/tinyxmlerror.cpp.i
+src/tinyXML/tinyxml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.i
+.PHONY : src/tinyXML/tinyxml.cpp.i
 
-tinyXML/tinyxmlerror.s: tinyXML/tinyxmlerror.cpp.s
+src/tinyXML/tinyxml.s: src/tinyXML/tinyxml.cpp.s
 
-.PHONY : tinyXML/tinyxmlerror.s
+.PHONY : src/tinyXML/tinyxml.s
 
 # target to generate assembly for a file
-tinyXML/tinyxmlerror.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinyxmlerror.cpp.s
-.PHONY : tinyXML/tinyxmlerror.cpp.s
+src/tinyXML/tinyxml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinyxml.cpp.s
+.PHONY : src/tinyXML/tinyxml.cpp.s
 
-tinyXML/tinyxmlparser.o: tinyXML/tinyxmlparser.cpp.o
+src/tinyXML/tinyxmlerror.o: src/tinyXML/tinyxmlerror.cpp.o
 
-.PHONY : tinyXML/tinyxmlparser.o
+.PHONY : src/tinyXML/tinyxmlerror.o
 
 # target to build an object file
-tinyXML/tinyxmlparser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.o
-.PHONY : tinyXML/tinyxmlparser.cpp.o
+src/tinyXML/tinyxmlerror.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.o
+.PHONY : src/tinyXML/tinyxmlerror.cpp.o
 
-tinyXML/tinyxmlparser.i: tinyXML/tinyxmlparser.cpp.i
+src/tinyXML/tinyxmlerror.i: src/tinyXML/tinyxmlerror.cpp.i
 
-.PHONY : tinyXML/tinyxmlparser.i
+.PHONY : src/tinyXML/tinyxmlerror.i
 
 # target to preprocess a source file
-tinyXML/tinyxmlparser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.i
-.PHONY : tinyXML/tinyxmlparser.cpp.i
+src/tinyXML/tinyxmlerror.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.i
+.PHONY : src/tinyXML/tinyxmlerror.cpp.i
 
-tinyXML/tinyxmlparser.s: tinyXML/tinyxmlparser.cpp.s
+src/tinyXML/tinyxmlerror.s: src/tinyXML/tinyxmlerror.cpp.s
 
-.PHONY : tinyXML/tinyxmlparser.s
+.PHONY : src/tinyXML/tinyxmlerror.s
 
 # target to generate assembly for a file
-tinyXML/tinyxmlparser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/tinyXML/tinyxmlparser.cpp.s
-.PHONY : tinyXML/tinyxmlparser.cpp.s
+src/tinyXML/tinyxmlerror.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinyxmlerror.cpp.s
+.PHONY : src/tinyXML/tinyxmlerror.cpp.s
+
+src/tinyXML/tinyxmlparser.o: src/tinyXML/tinyxmlparser.cpp.o
+
+.PHONY : src/tinyXML/tinyxmlparser.o
+
+# target to build an object file
+src/tinyXML/tinyxmlparser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.o
+.PHONY : src/tinyXML/tinyxmlparser.cpp.o
+
+src/tinyXML/tinyxmlparser.i: src/tinyXML/tinyxmlparser.cpp.i
+
+.PHONY : src/tinyXML/tinyxmlparser.i
+
+# target to preprocess a source file
+src/tinyXML/tinyxmlparser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.i
+.PHONY : src/tinyXML/tinyxmlparser.cpp.i
+
+src/tinyXML/tinyxmlparser.s: src/tinyXML/tinyxmlparser.cpp.s
+
+.PHONY : src/tinyXML/tinyxmlparser.s
+
+# target to generate assembly for a file
+src/tinyXML/tinyxmlparser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lib.dir/build.make CMakeFiles/Lib.dir/src/tinyXML/tinyxmlparser.cpp.s
+.PHONY : src/tinyXML/tinyxmlparser.cpp.s
 
 # Help Target
 help:
@@ -424,30 +424,30 @@ help:
 	@echo "... geradorLib"
 	@echo "... motor"
 	@echo "... motorLib"
-	@echo "... Gerador/calculaVertices.o"
-	@echo "... Gerador/calculaVertices.i"
-	@echo "... Gerador/calculaVertices.s"
-	@echo "... Gerador/gerador.o"
-	@echo "... Gerador/gerador.i"
-	@echo "... Gerador/gerador.s"
-	@echo "... Motor/drawFunctions.o"
-	@echo "... Motor/drawFunctions.i"
-	@echo "... Motor/drawFunctions.s"
-	@echo "... Motor/motor.o"
-	@echo "... Motor/motor.i"
-	@echo "... Motor/motor.s"
-	@echo "... tinyXML/tinystr.o"
-	@echo "... tinyXML/tinystr.i"
-	@echo "... tinyXML/tinystr.s"
-	@echo "... tinyXML/tinyxml.o"
-	@echo "... tinyXML/tinyxml.i"
-	@echo "... tinyXML/tinyxml.s"
-	@echo "... tinyXML/tinyxmlerror.o"
-	@echo "... tinyXML/tinyxmlerror.i"
-	@echo "... tinyXML/tinyxmlerror.s"
-	@echo "... tinyXML/tinyxmlparser.o"
-	@echo "... tinyXML/tinyxmlparser.i"
-	@echo "... tinyXML/tinyxmlparser.s"
+	@echo "... src/Gerador/calculaVertices.o"
+	@echo "... src/Gerador/calculaVertices.i"
+	@echo "... src/Gerador/calculaVertices.s"
+	@echo "... src/Gerador/gerador.o"
+	@echo "... src/Gerador/gerador.i"
+	@echo "... src/Gerador/gerador.s"
+	@echo "... src/Motor/drawFunctions.o"
+	@echo "... src/Motor/drawFunctions.i"
+	@echo "... src/Motor/drawFunctions.s"
+	@echo "... src/Motor/motor.o"
+	@echo "... src/Motor/motor.i"
+	@echo "... src/Motor/motor.s"
+	@echo "... src/tinyXML/tinystr.o"
+	@echo "... src/tinyXML/tinystr.i"
+	@echo "... src/tinyXML/tinystr.s"
+	@echo "... src/tinyXML/tinyxml.o"
+	@echo "... src/tinyXML/tinyxml.i"
+	@echo "... src/tinyXML/tinyxml.s"
+	@echo "... src/tinyXML/tinyxmlerror.o"
+	@echo "... src/tinyXML/tinyxmlerror.i"
+	@echo "... src/tinyXML/tinyxmlerror.s"
+	@echo "... src/tinyXML/tinyxmlparser.o"
+	@echo "... src/tinyXML/tinyxmlparser.i"
+	@echo "... src/tinyXML/tinyxmlparser.s"
 .PHONY : help
 
 

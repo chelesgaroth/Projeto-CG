@@ -6,6 +6,14 @@
 #include <GL/glut.h>
 #endif
 
+#include <stdio.h>
+#include <string.h>
+
+using namespace std;
+
+draw::figure figura;
+
+
 void changeSize(int w, int h)
 {
 	// Prevent a divide by zero, when window is too short
@@ -26,7 +34,7 @@ void changeSize(int w, int h)
 	glMatrixMode(GL_MODELVIEW);
 }
 
-draw::figure teste;
+
 
 void renderScene(void)
 {
@@ -39,128 +47,77 @@ void renderScene(void)
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
-	teste.drawReferencial();
-	teste.drawFigure();
+	figura.drawReferencial();
+	figura.drawFigure();
 
 	// End of frame
 	glutSwapBuffers();
 }
-/*
-void lerFicheiroXML(string ficheiro) {
 
+void lerFicheiroXML(string name) {
     TiXmlDocument f;
-    TiXmlElement* root = f.RootElement();
-    bool b = f.LoadFile(ficheiro.c_str());
-
+    //Load do ficheiro XML com o nome que foi passado como argumento
+    bool b = f.LoadFile(name.c_str());
 
     if (b) {
-        for (TiXmlElement* elem = root->FirstChild()->ToElement(); elem!=NULL; elem = elem->NextSiblingElement()) {
-            const char* ficheiro1 = elem->Attribute("file");
+        TiXmlElement* root = f.RootElement();
 
+        //Inicialização do ciclo que percorre pelo ficheiro XML e lê os files que nele estão guardados
+        for (TiXmlElement* elem = root->FirstChild()->ToElement(); elem!=nullptr; elem = elem->NextSiblingElement()) {
+            const char* ficheiro = elem->Attribute("file");
             fstream fs;
-            fs.open(ficheiro1);
 
+            //Abre o ficheiro .3d
+            fs.open(ficheiro);
             if (fs.is_open()) {
                 string line;
-                float x1, y1, z1;
+                float x1, y1, z1 = 0.0f; //Inicializa as coordenadas de cada ponto
 
+                //Lê linha a linha do ficheiro, não esquecendo que cada linha é um vértice/ponto
                 while (getline(fs, line)) {
-                    //ler linha do ficheiro e colocar valores nas respetivas variáveis
-                    int  i = sscanf(line.c_str(), "%f %f %f\n", &x1, &y1, &z1);
-                    point p;
-                    p.x = x1;
-                    p.y = y1;
-                    p.z = z1;
-                    pontos.push_back(p);
+                    float cood[3]; //guarda num array as coordenadas de cada ponto
+
+                    string delimiter = " ";
+                    size_t pos = 0;
+                    string token;
+                    int i = 0;
+                    while ((pos = line.find(delimiter)) != string::npos) {
+                        token = line.substr(0, pos);
+                        cood[i] = std::stof(token); //converte para float e guarda a coordenada
+                        i++;
+                        line.erase(0, pos + delimiter.length());
+                    }
+                    x1=cood[0],y1=cood[1],z1=cood[2];
+                    figura.addPoint(x1,y1,z1);
                 }
-
                 fs.close();
+                //Apaga o ficheiro .3d já lido do XML !!!!!!
+
+
             }
-
-            else {printf("ERROR OPENING FILE");}
+            else std::cout << "Can't open file!"<< std::endl;
         }
-
     }
-
-    else printf("ERROR IN LOADING FILE XML");
-}*/
+    else std::cout <<"File does not exist!\n" << std::endl;
+}
 
 int main(int argc, char** argv){
-    if (argc != 1) {
-        printf("ERROR IN THE NUMBER OF ARGUMENTS");
-
+    if (argc <=1) {
+        std::cout << "\nMissing arguments\n" << std::endl;
+    }
+    else if(argc > 2){
+        std::cout << "\nToo many arguments\n" << std::endl;
     }
     else {
+        std::cout << "\nLendo .... ..... ....\n" << std::endl;
+        lerFicheiroXML(argv[1]);
 
-        //lerFicheiroXML(argv[1]);
         // put GLUT init here
         glutInit(&argc, argv);
         glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
         glutInitWindowPosition(100, 100);
         glutInitWindowSize(800, 800);
-        glutCreateWindow("Motor");
-
-        // inicializar valores de teste
-        //1 base baixo
-        teste.addPoint(1, -1, 1);
-        teste.addPoint(-1, -1, 1);
-        teste.addPoint(-1, -1, -1);
-
-        //2 base baixo
-        teste.addPoint(1, -1, 1);
-        teste.addPoint(1, -1, -1);
-        teste.addPoint(-1, -1, -1);
-
-        //3 base cima
-        teste.addPoint(1, 1, 1);
-        teste.addPoint(-1, 1, 1);
-        teste.addPoint(-1, 1, -1);
-
-        //4 base cima
-        teste.addPoint(1, 1, 1);
-        teste.addPoint(1, 1, -1);
-        teste.addPoint(-1, 1, -1);
-
-        //5 frente
-        teste.addPoint(1, -1, 1);
-        teste.addPoint(1, 1, 1);
-        teste.addPoint(-1, 1, 1);
-
-        //6 frente
-        teste.addPoint(1, -1, 1);
-        teste.addPoint(-1, -1, 1);
-        teste.addPoint(-1, 1, 1);
-
-        //7 esquerda
-        teste.addPoint(-1, -1, -1);
-        teste.addPoint(-1, -1, 1);
-        teste.addPoint(-1, 1, 1);
-
-        //8 esquerda
-        teste.addPoint(-1, -1, -1);
-        teste.addPoint(-1, 1, -1);
-        teste.addPoint(-1, 1, 1);
-
-        //9 direita
-        teste.addPoint(1, -1, -1);
-        teste.addPoint(1, -1, 1);
-        teste.addPoint(1, 1, 1);
-
-        //10 direita
-        teste.addPoint(1, -1, -1);
-        teste.addPoint(1, 1, -1);
-        teste.addPoint(1, 1, 1);
-
-        //11 tras
-        teste.addPoint(1, -1, -1);
-        teste.addPoint(1, 1, -1);
-        teste.addPoint(-1, 1, -1);
-
-        //12 tras
-        teste.addPoint(1, -1, -1);
-        teste.addPoint(-1, -1, -1);
-        teste.addPoint(-1, 1, -1);
-
+        glutCreateWindow("Projeto-CG");
 
 
         // put callback registry here

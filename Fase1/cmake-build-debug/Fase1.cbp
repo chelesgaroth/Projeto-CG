@@ -258,40 +258,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/calculaVertices.cpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/calculaVertices.cpp">
 			<Option target="geradorLib"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/calculaVertices.hpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/calculaVertices.hpp">
 			<Option target="geradorLib"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/gerador.cpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/gerador.cpp">
 			<Option target="gerador"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/drawFunctions.cpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.cpp">
 			<Option target="motorLib"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/drawFunctions.hpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.hpp">
 			<Option target="motorLib"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Motor/motor.cpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/motor.cpp">
 			<Option target="motor"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.cpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.cpp">
 			<Option target="Lib"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinystr.h">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.h">
 			<Option target="Lib"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.cpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.cpp">
 			<Option target="Lib"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxml.h">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.h">
 			<Option target="Lib"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlerror.cpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxmlerror.cpp">
 			<Option target="Lib"/>
 		</Unit>
-		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/tinyXML/tinyxmlparser.cpp">
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxmlparser.cpp">
 			<Option target="Lib"/>
 		</Unit>
 		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/CMakeLists.txt">

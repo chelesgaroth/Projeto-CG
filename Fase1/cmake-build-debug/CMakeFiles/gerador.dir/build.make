@@ -77,27 +77,27 @@ include CMakeFiles/gerador.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gerador.dir/flags.make
 
-CMakeFiles/gerador.dir/Gerador/gerador.cpp.o: CMakeFiles/gerador.dir/flags.make
-CMakeFiles/gerador.dir/Gerador/gerador.cpp.o: ../Gerador/gerador.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gerador.dir/Gerador/gerador.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gerador.dir/Gerador/gerador.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/gerador.cpp"
+CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o: CMakeFiles/gerador.dir/flags.make
+CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o: ../src/Gerador/gerador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o -c "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/gerador.cpp"
 
-CMakeFiles/gerador.dir/Gerador/gerador.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gerador.dir/Gerador/gerador.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/gerador.cpp" > CMakeFiles/gerador.dir/Gerador/gerador.cpp.i
+CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/gerador.cpp" > CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.i
 
-CMakeFiles/gerador.dir/Gerador/gerador.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gerador.dir/Gerador/gerador.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/Gerador/gerador.cpp" -o CMakeFiles/gerador.dir/Gerador/gerador.cpp.s
+CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Gerador/gerador.cpp" -o CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.s
 
 # Object files for target gerador
 gerador_OBJECTS = \
-"CMakeFiles/gerador.dir/Gerador/gerador.cpp.o"
+"CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o"
 
 # External object files for target gerador
 gerador_EXTERNAL_OBJECTS =
 
-gerador: CMakeFiles/gerador.dir/Gerador/gerador.cpp.o
+gerador: CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o
 gerador: CMakeFiles/gerador.dir/build.make
 gerador: libgeradorLib.a
 gerador: libLib.a

@@ -27,6 +27,10 @@ GLUT/glut.h
 -
 GL/glut.h
 -
+stdio.h
+-
+string.h
+-
 
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.h
 assert.h

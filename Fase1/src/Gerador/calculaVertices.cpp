@@ -1,172 +1,95 @@
-#include <string>
-#include <vector>
-
 #define _USE_MATH_DEFINES
-#include <math.h>
+#include <cmath>
 
-using namespace std;
+#include "calculaVertices.hpp"
 
-struct point {
-    float x;
-    float y;
-    float z;
-};
+using namespace generate;
 
-// Função que desenha o plano utilizando dois triângulos (6 pontos)
-vector<point> plane(float x, float z) {
 
-    vector <point> pontos;
+// cria um ponto com as dadas coordenadas, e adiciona-o à lista de pontos da figura
+void figure::addPoint(float a, float b, float c) {
+    point p;
+    p.x = a;
+    p.y = b;
+    p.z = c;
+    pontos.push_back(p);
+}
+
+// retorna o vetor de pontos da figura
+std::vector<point> figure::getVector() {
+    return pontos;
+}
+
+// passa um vetor para a figura
+void figure::setVector(std::vector<point> v) {
+    pontos = v;
+}
+
+
+figure generate::createPlane(float x, float z) {
+
+    figure f;
 
     float x1 = x / 2;
     float z1 = z / 2;
 
-    point p1,p2,p3,p4,p5,p6;
-
     //Triângulo 1
-
-    p1.x = x1;
-    p1.y = 0;
-    p1.z = z1;
-
-    p2.x = x1;
-    p2.y = 0;
-    p2.z = -z1;
-
-    p3.x = -x1;
-    p3.y = 0;
-    p3.z = -z1;
-
+    f.addPoint(x1, 0, z1);
+    f.addPoint(x1, 0, -z1);
+    f.addPoint(-x1, 0, -z1);
 
     // Triângulo 2
+    f.addPoint(-x1, 0, -z1);
+    f.addPoint(-x1, 0, z1);
+    f.addPoint(x1, 0, z1);
 
-    p4.x = -x1;
-    p4.y = 0;
-    p4.z = -z1;
-
-    p5.x = -x1;
-    p5.y = 0;
-    p5.z = z1;
-
-    p6.x = x1;
-    p6.y = 0;
-    p6.z = z1;
-
-    pontos.push_back(p1);
-    pontos.push_back(p2);
-    pontos.push_back(p3);
-
-    pontos.push_back(p4);
-    pontos.push_back(p5);
-    pontos.push_back(p6);
-
-    return pontos;
+    return f;
 }
 
 
+figure generate::createBox(float x, float y, float z, int camadas) {
+    figure f;
 
-
-
-// Função que desenha a box que pode ter camadas
-vector<point> box(float x, float y, float z, int camadas) {
-    vector<point> pontos;
-
-    float x1 = x/2;
-    float z1 = z/2;
+    float x1 = x / 2;
+    float z1 = z / 2;
     float camadaX = camadas / x;
     float camadaY = camadas / y;
     float camadaZ = camadas / z;
-
-    // Pontos de um plano
-    point p1;
-    point p2;
-    point p3;
-    point p4;
-    point p5;
-    point p6;
+    int i, j;
 
     // Desenhar a base
     float auxX = -x1;
     float auxZ = -z1;
-    for (int i = 0; i < camadas; i++) {
-        for (int j = 0; j < camadas; j++) {
+    for (i = 0; i < camadas; i++) {
+        for (j = 0; j < camadas; j++) {
 
-            p1.x = auxX;
-            p1.y = 0;
-            p1.z = auxZ;
+            f.addPoint(auxX, 0, auxZ);
+            f.addPoint(auxX + camadaX, 0, auxZ);
+            f.addPoint(auxX + camadaX, 0, auxZ + camadaZ);
 
-            p2.x = auxX + camadaX;
-            p2.y = 0;
-            p2.z = auxZ;
-
-            p3.x = auxX + camadaX;
-            p3.y = 0;
-            p3.z = auxZ + camadaZ;
-
-
-            p4.x = auxX + camadaX;
-            p4.y = 0;
-            p4.z = auxZ + camadaZ;
-
-            p5.x = auxX;
-            p5.y = 0;
-            p5.z = auxZ + camadaZ;
-
-            p6.x = auxX;
-            p6.y = 0;
-            p6.z = auxZ;
-
-            pontos.push_back(p1);
-            pontos.push_back(p2);
-            pontos.push_back(p3);
-
-            pontos.push_back(p4);
-            pontos.push_back(p5);
-            pontos.push_back(p6);
+            f.addPoint(auxX + camadaX, 0, auxZ + camadaZ);
+            f.addPoint(auxX, 0, auxZ + camadaZ);
+            f.addPoint(auxX, 0, auxZ);
 
             auxZ += camadaZ;
         }
         auxX += camadaX;
     }
 
-
     // Desenhar o teto
     auxX = -x1;
     auxZ = -z1;
     float auxY = y;
-    for (int i = 0; i < camadas; i++) {
-        for (int j = 0; j < camadas; j++) {
+    for (i = 0; i < camadas; i++) {
+        for (j = 0; j < camadas; j++) {
 
-            p1.x = auxX + camadaX;
-            p1.y = auxY;
-            p1.z = auxZ + camadaZ;
+            f.addPoint(auxX + camadaX, auxY, auxZ + camadaZ);
+            f.addPoint(auxX + camadaX, auxY, auxZ);
+            f.addPoint(auxX, auxY, auxZ);
 
-            p2.x = auxX + camadaX;
-            p2.y = auxY;
-            p2.z = auxZ;
-
-            p3.x = auxX;
-            p3.y = auxY;
-            p3.z = auxZ;
-
-            p4.x = auxX;
-            p4.y = auxY;
-            p4.z = auxZ;
-
-            p5.x = auxX;
-            p5.y = auxY;
-            p5.z = auxZ + camadaZ;
-
-            p6.x = auxX + camadaX;
-            p6.y = auxY;
-            p6.z = auxZ + camadaZ;
-
-            pontos.push_back(p1);
-            pontos.push_back(p2);
-            pontos.push_back(p3);
-
-            pontos.push_back(p4);
-            pontos.push_back(p5);
-            pontos.push_back(p6);
+            f.addPoint(auxX, auxY, auxZ);
+            f.addPoint(auxX, auxY, auxZ + camadaZ);
+            f.addPoint(auxX + camadaX, auxY, auxZ + camadaZ);
 
             auxZ += camadaZ;
         }
@@ -177,40 +100,16 @@ vector<point> box(float x, float y, float z, int camadas) {
     auxX = x1;
     auxZ = z1;
     auxY = y;
-    for (int i = 0; i < camadas; i++) {
-        for (int j = 0; j < camadas; j++) {
+    for (i = 0; i < camadas; i++) {
+        for (j = 0; j < camadas; j++) {
 
-            p1.x = auxX;
-            p1.y = auxY;
-            p1.z = auxZ;
+            f.addPoint(auxX, auxY, auxZ);
+            f.addPoint(auxX, auxY - camadaY, auxZ);
+            f.addPoint(auxX, auxY - camadaY, auxZ - camadaZ);
 
-            p2.x = auxX;
-            p2.y = auxY - camadaY;
-            p2.z = auxZ;
-
-            p3.x = auxX;
-            p3.y = auxY - camadaY;
-            p3.z = auxZ - camadaZ;
-
-            p4.x = auxX;
-            p4.y = auxY - camadaY;
-            p4.z = auxZ - camadaZ;
-
-            p5.x = auxX;
-            p5.y = auxY;
-            p5.z = auxZ - camadaZ;
-
-            p6.x = auxX;
-            p6.y = auxY;
-            p6.z = auxZ;
-
-            pontos.push_back(p1);
-            pontos.push_back(p2);
-            pontos.push_back(p3);
-
-            pontos.push_back(p4);
-            pontos.push_back(p5);
-            pontos.push_back(p6);
+            f.addPoint(auxX, auxY - camadaY, auxZ - camadaZ);
+            f.addPoint(auxX, auxY, auxZ - camadaZ);
+            f.addPoint(auxX, auxY, auxZ);
 
             auxZ -= camadaZ;
         }
@@ -221,40 +120,16 @@ vector<point> box(float x, float y, float z, int camadas) {
     auxX = -x1;
     auxZ = -z1;
     auxY = y;
-    for (int i = 0; i < camadas; i++) {
-        for (int j = 0; j < camadas; j++) {
+    for (i = 0; i < camadas; i++) {
+        for (j = 0; j < camadas; j++) {
 
-            p1.x = auxX;
-            p1.y = auxY;
-            p1.z = auxZ;
+            f.addPoint(auxX, auxY, auxZ);
+            f.addPoint(auxX, auxY - camadaY, auxZ);
+            f.addPoint(auxX, auxY - camadaY, auxZ + camadaZ);
 
-            p2.x = auxX;
-            p2.y = auxY - camadaY;
-            p2.z = auxZ;
-
-            p3.x = auxX;
-            p3.y = auxY - camadaY;
-            p3.z = auxZ + camadaZ;
-
-            p4.x = auxX;
-            p4.y = auxY - camadaY;
-            p4.z = auxZ + camadaZ;
-
-            p5.x = auxX;
-            p5.y = auxY;
-            p5.z = auxZ + camadaZ;
-
-            p6.x = auxX;
-            p6.y = auxY;
-            p6.z = auxZ;
-
-            pontos.push_back(p1);
-            pontos.push_back(p2);
-            pontos.push_back(p3);
-
-            pontos.push_back(p4);
-            pontos.push_back(p5);
-            pontos.push_back(p6);
+            f.addPoint(auxX, auxY - camadaY, auxZ + camadaZ);
+            f.addPoint(auxX, auxY, auxZ + camadaZ);
+            f.addPoint(auxX, auxY, auxZ);
 
             auxZ += camadaZ;
         }
@@ -265,40 +140,16 @@ vector<point> box(float x, float y, float z, int camadas) {
     auxX = -x1;
     auxZ = z1;
     auxY = y;
-    for (int i = 0; i < camadas; i++) {
-        for (int j = 0; j < camadas; j++) {
+    for (i = 0; i < camadas; i++) {
+        for (j = 0; j < camadas; j++) {
 
-            p1.x = auxX;
-            p1.y = auxY;
-            p1.z = auxZ;
+            f.addPoint(auxX, auxY, auxZ);
+            f.addPoint(auxX, auxY - camadaY, auxZ);
+            f.addPoint(auxX + camadaX, auxY - camadaY, auxZ);
 
-            p2.x = auxX;
-            p2.y = auxY - camadaY;
-            p2.z = auxZ;
-
-            p3.x = auxX + camadaX;
-            p3.y = auxY - camadaY;
-            p3.z = auxZ;
-
-            p4.x = auxX + camadaX;
-            p4.y = auxY - camadaY;
-            p4.z = auxZ;
-
-            p5.x = auxX + camadaX;
-            p5.y = auxY;
-            p5.z = auxZ;
-
-            p6.x = auxX;
-            p6.y = auxY;
-            p6.z = auxZ;
-
-            pontos.push_back(p1);
-            pontos.push_back(p2);
-            pontos.push_back(p3);
-
-            pontos.push_back(p4);
-            pontos.push_back(p5);
-            pontos.push_back(p6);
+            f.addPoint(auxX + camadaX, auxY - camadaY, auxZ);
+            f.addPoint(auxX + camadaX, auxY, auxZ);
+            f.addPoint(auxX, auxY, auxZ);
 
             auxX += camadaX;
         }
@@ -309,117 +160,70 @@ vector<point> box(float x, float y, float z, int camadas) {
     auxX = x1;
     auxZ = -z1;
     auxY = y;
-    for (int i = 0; i < camadas; i++) {
-        for (int j = 0; j < camadas; j++) {
+    for (i = 0; i < camadas; i++) {
+        for (j = 0; j < camadas; j++) {
 
-            p1.x = auxX;
-            p1.y = auxY;
-            p1.z = auxZ;
+            f.addPoint(auxX, auxY, auxZ);
+            f.addPoint(auxX, auxY - camadaY, auxZ);
+            f.addPoint(auxX - camadaX, auxY - camadaY, auxZ);
 
-            p2.x = auxX;
-            p2.y = auxY - camadaY;
-            p2.z = auxZ;
-
-            p3.x = auxX - camadaX;
-            p3.y = auxY - camadaY;
-            p3.z = auxZ;
-
-            p4.x = auxX - camadaX;
-            p4.y = auxY - camadaY;
-            p4.z = auxZ;
-
-            p5.x = auxX - camadaX;
-            p5.y = auxY;
-            p5.z = auxZ;
-
-            p6.x = auxX;
-            p6.y = auxY;
-            p6.z = auxZ;
-
-            pontos.push_back(p1);
-            pontos.push_back(p2);
-            pontos.push_back(p3);
-
-            pontos.push_back(p4);
-            pontos.push_back(p5);
-            pontos.push_back(p6);
+            f.addPoint(auxX - camadaX, auxY - camadaY, auxZ);
+            f.addPoint(auxX - camadaX, auxY, auxZ);
+            f.addPoint(auxX, auxY, auxZ);
 
             auxX -= camadaX;
         }
         auxY -= camadaY;
     }
-
-    return pontos;
+    return f;
 }
 
-vector<point> sphere(float raio, int stacks, int slices) {
+figure generate::createSphere(float raio, int stacks, int slices)
+{
+    figure f;
 
-    vector <point> pontos;
-
-    float delta1 = M_PI / stacks ;
-    float delta2 = 2*M_PI / slices;
+    float delta1 = M_PI / stacks;
+    float delta2 = 2 * M_PI / slices;
+    float angulo1, angulo2, temp, x, y, z;
 
     for (int i = 0; i < stacks; i++) {
 
-        float angulo1 = -M_PI / 2.0 + i * delta1;
-        float temp = raio * cos(angulo1);
-        float y = raio * sin(angulo1);
+        angulo1 = -M_PI / 2.0 + i * delta1;
+        temp = raio * cos(angulo1);
+        y = raio * sin(angulo1);
 
         for (int j = 0; j < slices; j++) {
 
-            float angulo2 = j * delta2;
-            float x = temp * sin(angulo2);
-            float z = temp * cos(angulo2);
+            angulo2 = j * delta2;
+            x = temp * sin(angulo2);
+            z = temp * cos(angulo2);
 
-            point p1;
-            p1.x = x;
-            p1.y = y;
-            p1.z = z;
-            pontos.push_back(p1);
+            f.addPoint(x, y, z);
         }
     }
-    return pontos;
+    return f;
 }
 
+figure generate::createCone(float radius, float height, int slices, int stacks) {
+    figure f;
 
-vector<point> cone(float radius, float height, int slices, int stacks) {
-    vector<point> pontos;
     float theta = 0;
     float nextTheta = 0;
     float delta = (2 * M_PI) / slices;
     float raio = radius / stacks;
     float alturas = height / stacks;
-
-    point p1;
-    point p2;
-    point p3;
-    point p4;
-    point p5;
-    point p6;
+    int i, j;
 
     //fazer a circunferência da base
-
-    for (int i = 0; i < slices; i++) {
+    for (i = 0; i < slices; i++) {
 
         nextTheta = theta + delta;
-        p1.x = 0;
-        p1.y = 0;
-        p1.z = 0;
 
-        p2.x = radius * sin(nextTheta);
-        p2.y = 0;
-        p2.z = radius * cos(nextTheta);
-
-        p3.x = radius * sin(theta);
-        p3.y = 0;
-        p3.z = radius * cos(theta);
-
+        f.addPoint(0, 0, 0);
+        f.addPoint(radius * sin(nextTheta), 0, radius * cos(nextTheta));
+        f.addPoint(radius * sin(theta), 0, cos(theta));
 
         theta = nextTheta;
-        pontos.push_back(p1);
-        pontos.push_back(p2);
-        pontos.push_back(p3);
-
     }
 
     // Fazer as laterais
@@ -430,47 +234,24 @@ vector<point> cone(float radius, float height, int slices, int stacks) {
     theta = 0;
     nextTheta = 0;
 
-    for (int i = 0; i < slices; i++) {
+    for (i = 0; i < slices; i++) {
 
         nextTheta += delta;
 
-        for (int j = 0; j < stacks; j++) {
+        for (j = 0; j < stacks; j++) {
 
-            p1.x = r1 * sin(nextTheta);
-            p1.y = alt1;
-            p1.z = r1 * cos(nextTheta);
+            f.addPoint(r1 * sin(nextTheta), alt1, r1 * cos(nextTheta));
+            f.addPoint(r2 * sin(nextTheta), alt2, r2 * cos(nextTheta));
+            f.addPoint(r1 * sin(theta), alt1, r1 * cos(theta));
 
-            p2.x = r2 * sin(nextTheta);
-            p2.y = alt2;
-            p2.z = r2 * cos(nextTheta);
-
-            p3.x = r1 * sin(theta);
-            p3.y = alt1;
-            p3.z = r1 * cos(theta);
-
-            p4.x = r2 * sin(nextTheta);
-            p4.y = alt2;
-            p4.z = r2 * cos(nextTheta);
-
-            p5.x = r2 * sin(theta);
-            p5.y = alt2;
-            p5.z = r2 * cos(theta);
-
-            p6.x = r1 * sin(theta);
-            p6.y = alt1;
-            p6.z = r1 * cos(theta);
+            f.addPoint(r2 * sin(nextTheta), alt2, r2 * cos(nextTheta));
+            f.addPoint(r2 * sin(theta), alt2, r2 * cos(theta));
+            f.addPoint(r1 * sin(theta), alt1, r1 * cos(theta));
 
             r1 -= raio;
             r2 -= raio;
             alt1 += alturas;
             alt2 += alturas;
-            pontos.push_back(p1);
-            pontos.push_back(p2);
-            pontos.push_back(p3);
-
-            pontos.push_back(p4);
-            pontos.push_back(p5);
-            pontos.push_back(p6);
         }
         r1 = radius;
         r2 = radius - raio;
@@ -478,5 +259,5 @@ vector<point> cone(float radius, float height, int slices, int stacks) {
         alt2 = alturas;
         theta = nextTheta;
     }
-    return pontos;
+    return f;
 }
