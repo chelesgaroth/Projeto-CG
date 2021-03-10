@@ -2,6 +2,7 @@
 
 ```
 $ cd build
+$ mkdir 3dFiles (in case it doesn't exist)
 $ cmake ..
 $ make
 ```
