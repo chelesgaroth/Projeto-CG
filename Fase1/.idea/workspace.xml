@@ -14,55 +14,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="937460f4-fd10-4e31-af6c-21e8453b9e1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Fase1.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Fase1.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Fase1.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Fase1.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LibMotor.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LibMotor.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LibMotor.dir/cmake_clean_target.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LibMotor.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/LibMotor.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/src/Motor/motor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/src/Motor/motor.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gerador" beforeDir="false" afterPath="$PROJECT_DIR$/build/gerador" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libgeradorLib.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/libgeradorLib.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/motor" beforeDir="false" afterPath="$PROJECT_DIR$/build/motor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lib.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lib.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lib.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lib.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lib.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lib.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lib.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Lib.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/geradorLib.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/geradorLib.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/geradorLib.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/geradorLib.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motorLib.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motorLib.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motorLib.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motorLib.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motorLib.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motorLib.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Fase1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Fase1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gerador/calculaVertices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/calculaVertices.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gerador/calculaVertices.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/calculaVertices.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gerador/gerador.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/gerador.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Motor/motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motor/motor.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="937460f4-fd10-4e31-af6c-21e8453b9e1d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +102,7 @@
       <workItem from="1615162519043" duration="78000" />
       <workItem from="1615209772349" duration="16633000" />
       <workItem from="1615325532585" duration="3759000" />
-      <workItem from="1615332789353" duration="3403000" />
+      <workItem from="1615332789353" duration="3963000" />
     </task>
     <servers />
   </component>
