@@ -26,12 +26,21 @@ add_library(
 add_library(
         geradorLib
         src/Gerador/calculaVertices.cpp
+        src/Gerador/calculaVertices.hpp
+)
+
+add_library(
+        utilsLib
+        src/Utils/utils.cpp
+        src/Utils/utils.hpp
 )
 
 target_link_libraries(gerador geradorLib)
 target_link_libraries(gerador Lib)
+target_link_libraries(gerador utilsLib)
 
 target_link_libraries(motor motorLib)
 target_link_libraries(motor Lib)
+target_link_libraries(motor utilsLib)
 target_link_libraries(motor ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
 

@@ -19,6 +19,12 @@ string
 -
 ../tinyXML/tinyxml.h
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.h
+../Utils/utils.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Utils/utils.hpp
+GLUT/glut.h
+-
+GL/glut.h
+-
 
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/motor.cpp
 drawFunctions.hpp
@@ -30,6 +36,22 @@ GL/glut.h
 stdio.h
 -
 string.h
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Utils/utils.hpp
+cstdio
+-
+cstdlib
+-
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+sstream
 -
 
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.h

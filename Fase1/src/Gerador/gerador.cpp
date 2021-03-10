@@ -1,8 +1,8 @@
 #include <iostream>
+
 #include "../tinyXML/tinyxml.h"
-#include "calculaVertices.cpp" //não seria suposto dar include ao hpp???
-#include <fstream>
-#include <sstream>
+#include "calculaVertices.hpp"
+
 
 using namespace std;
 TiXmlDocument doc;
@@ -41,7 +41,7 @@ int write_XML(string file) {
 }
 
 
-int createFileType (vector<point> vertices, string name){
+int createFileType (vector<utils::point> vertices, string name){
 
     fstream file;
     // in out(write) mode
@@ -66,7 +66,7 @@ int createFileType (vector<point> vertices, string name){
 
 int main(int argc, char* argv[]) {
 
-    figure f;
+    utils::figure f;
 
     //Gerar os vértices para o desenho do plano e transcrever para o ficheiro .3d
     if((strcmp(argv[1],"Plane")==0)&&(argc==5)) {
@@ -74,7 +74,7 @@ int main(int argc, char* argv[]) {
         float x = std::stof(argv[2]);
         float z = std::stof(argv[3]);
 
-        f = createPlane(x, z);
+        f = generate::createPlane(x, z);
 
         createFileType(f.getVector(), argv[4]);
         write_XML(argv[4]);
@@ -90,7 +90,7 @@ int main(int argc, char* argv[]) {
         int camadas = 0;
         aux >> camadas;
 
-        f = createBox(x, y, z, camadas);
+        f = generate::createBox(x, y, z, camadas);
 
         createFileType(f.getVector(), argv[6]);
         write_XML(argv[6]);
@@ -107,7 +107,7 @@ int main(int argc, char* argv[]) {
         int stacks = 0;
         aux2 >> stacks;
 
-        f = createSphere(radius, stacks, slices);
+        f = generate::createSphere(radius, stacks, slices);
 
         createFileType(f.getVector(), argv[5]);
         write_XML(argv[5]);
@@ -126,7 +126,7 @@ int main(int argc, char* argv[]) {
         int stacks = 0;
         aux2 >> stacks;
 
-        f = createCone(radius, height, stacks, slices);
+        f = generate::createCone(radius, height, stacks, slices);
 
         createFileType(f.getVector(), argv[6]);
         write_XML(argv[6]);

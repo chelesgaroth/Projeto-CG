@@ -81,6 +81,7 @@ motor: CMakeFiles/motor.dir/src/Motor/motor.cpp.o
 motor: CMakeFiles/motor.dir/build.make
 motor: libmotorLib.a
 motor: libLib.a
+motor: libutilsLib.a
 motor: /usr/lib/x86_64-linux-gnu/libGL.so
 motor: /usr/lib/x86_64-linux-gnu/libGLU.so
 motor: /usr/lib/x86_64-linux-gnu/libglut.so

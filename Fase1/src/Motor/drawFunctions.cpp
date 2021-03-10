@@ -1,11 +1,7 @@
 #include "drawFunctions.hpp"
-#ifdef __APPLE__
-#include <GLUT/glut.h>
-#else
-#include <GL/glut.h>
-#endif
 
-void draw::figure::drawTriangle(point p1, point p2, point p3) {
+
+void draw::drawTriangle(utils::point p1, utils::point p2, utils::point p3) {
 
 	glBegin(GL_TRIANGLES);
 
@@ -19,25 +15,17 @@ void draw::figure::drawTriangle(point p1, point p2, point p3) {
 	glEnd();
 }
 
-// cria um ponto com as dadas coordenadas, e adiciona-lo à lista de pontos da figura
-void draw::figure::addPoint(float a, float b, float c) {
-	draw::point p;
-	p.x = a;
-	p.y = b;
-	p.z = c;
-	pontos.push_back(p);
-}
 
 // recebe a lista de pontos, e o n�mero de pontos contidos na lista
-void draw::figure::drawFigure() {
+void draw::drawFigure(utils::figure f) {
 	int i;
-	for (i = 0; i+2 < pontos.size(); i+=3) {
+	for (i = 0; i+2 <= f.pontos.size(); i+=3) {                                // MENOR PARA MENOR OU IGUAL !!!!!!!
 		//desenha os triangulos partindo da lista de pontos da figura
-		drawTriangle(pontos[i], pontos[i + 1], pontos[i + 2]);
+		draw::drawTriangle(f.pontos[i], f.pontos[i + 1], f.pontos[i + 2]);
 	}
 }
 
-void draw::figure::drawReferencial() {
+void draw::drawReferencial() {
 	// Desenhar referencial
 	glBegin(GL_LINES);
 	

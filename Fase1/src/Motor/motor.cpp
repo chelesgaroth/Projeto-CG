@@ -11,7 +11,7 @@
 
 using namespace std;
 
-draw::figure figura;
+utils::figure figura;
 
 
 void changeSize(int w, int h)
@@ -47,8 +47,9 @@ void renderScene(void)
 		0.0, 0.0, 0.0,
 		0.0f, 1.0f, 0.0f);
 
-	figura.drawReferencial();
-	figura.drawFigure();
+
+	draw::drawReferencial();
+	draw::drawFigure(figura);
 
 	// End of frame
 	glutSwapBuffers();

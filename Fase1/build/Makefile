@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named utilsLib
+
+# Build rule for target.
+utilsLib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 utilsLib
+.PHONY : utilsLib
+
+# fast build rule for target.
+utilsLib/fast:
+	$(MAKE) -f CMakeFiles/utilsLib.dir/build.make CMakeFiles/utilsLib.dir/build
+.PHONY : utilsLib/fast
+
+#=============================================================================
 # Target rules for targets named geradorLib
 
 # Build rule for target.
@@ -283,6 +296,33 @@ src/Motor/motor.cpp.s:
 	$(MAKE) -f CMakeFiles/motor.dir/build.make CMakeFiles/motor.dir/src/Motor/motor.cpp.s
 .PHONY : src/Motor/motor.cpp.s
 
+src/Utils/utils.o: src/Utils/utils.cpp.o
+
+.PHONY : src/Utils/utils.o
+
+# target to build an object file
+src/Utils/utils.cpp.o:
+	$(MAKE) -f CMakeFiles/utilsLib.dir/build.make CMakeFiles/utilsLib.dir/src/Utils/utils.cpp.o
+.PHONY : src/Utils/utils.cpp.o
+
+src/Utils/utils.i: src/Utils/utils.cpp.i
+
+.PHONY : src/Utils/utils.i
+
+# target to preprocess a source file
+src/Utils/utils.cpp.i:
+	$(MAKE) -f CMakeFiles/utilsLib.dir/build.make CMakeFiles/utilsLib.dir/src/Utils/utils.cpp.i
+.PHONY : src/Utils/utils.cpp.i
+
+src/Utils/utils.s: src/Utils/utils.cpp.s
+
+.PHONY : src/Utils/utils.s
+
+# target to generate assembly for a file
+src/Utils/utils.cpp.s:
+	$(MAKE) -f CMakeFiles/utilsLib.dir/build.make CMakeFiles/utilsLib.dir/src/Utils/utils.cpp.s
+.PHONY : src/Utils/utils.cpp.s
+
 src/tinyXML/tinystr.o: src/tinyXML/tinystr.cpp.o
 
 .PHONY : src/tinyXML/tinystr.o
@@ -398,6 +438,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... utilsLib"
 	@echo "... geradorLib"
 	@echo "... motorLib"
 	@echo "... Lib"
@@ -416,6 +457,9 @@ help:
 	@echo "... src/Motor/motor.o"
 	@echo "... src/Motor/motor.i"
 	@echo "... src/Motor/motor.s"
+	@echo "... src/Utils/utils.o"
+	@echo "... src/Utils/utils.i"
+	@echo "... src/Utils/utils.s"
 	@echo "... src/tinyXML/tinystr.o"
 	@echo "... src/tinyXML/tinystr.i"
 	@echo "... src/tinyXML/tinystr.s"

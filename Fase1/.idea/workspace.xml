@@ -3,6 +3,7 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="Fase1" targetName="Lib" />
+      <config projectName="Fase1" targetName="utilsLib" />
       <config projectName="Fase1" targetName="geradorLib" />
       <config projectName="Fase1" targetName="gerador" />
       <config projectName="Fase1" targetName="motorLib" />
@@ -14,7 +15,61 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="937460f4-fd10-4e31-af6c-21e8453b9e1d" name="Default Changelist" comment="" />
+    <list default="true" id="937460f4-fd10-4e31-af6c-21e8453b9e1d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Utils/utils.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/utils.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/src/Motor/motor.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motor.dir/src/Motor/motor.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motorLib.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motorLib.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motorLib.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motorLib.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motorLib.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motorLib.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/motorLib.dir/src/Motor/drawFunctions.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gerador" beforeDir="false" afterPath="$PROJECT_DIR$/build/gerador" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libgeradorLib.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/libgeradorLib.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libmotorLib.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/libmotorLib.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/motor" beforeDir="false" afterPath="$PROJECT_DIR$/build/motor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gerador.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/motor.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Fase1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Fase1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gerador/calculaVertices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/calculaVertices.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gerador/calculaVertices.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/calculaVertices.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gerador/gerador.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/gerador.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Motor/drawFunctions.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motor/drawFunctions.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Motor/drawFunctions.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motor/drawFunctions.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Motor/motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motor/motor.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +102,17 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.motor">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Fase1" TARGET_NAME="Lib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -72,9 +137,9 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="utilsLib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Fase1" TARGET_NAME="utilsLib" CONFIG_NAME="Debug">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -83,6 +148,7 @@
       <item itemvalue="CMake Application.Lib" />
       <item itemvalue="CMake Application.motor" />
       <item itemvalue="CMake Application.motorLib" />
+      <item itemvalue="CMake Application.utilsLib" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -102,7 +168,8 @@
       <workItem from="1615162519043" duration="78000" />
       <workItem from="1615209772349" duration="16633000" />
       <workItem from="1615325532585" duration="3759000" />
-      <workItem from="1615332789353" duration="3963000" />
+      <workItem from="1615332789353" duration="4606000" />
+      <workItem from="1615366753711" duration="7677000" />
     </task>
     <servers />
   </component>

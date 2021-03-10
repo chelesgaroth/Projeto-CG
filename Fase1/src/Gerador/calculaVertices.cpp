@@ -6,29 +6,10 @@
 using namespace generate;
 
 
-// cria um ponto com as dadas coordenadas, e adiciona-o à lista de pontos da figura
-void figure::addPoint(float a, float b, float c) {
-    point p;
-    p.x = a;
-    p.y = b;
-    p.z = c;
-    pontos.push_back(p);
-}
 
-// retorna o vetor de pontos da figura
-std::vector<point> figure::getVector() {
-    return pontos;
-}
+utils::figure generate::createPlane(float x, float z) {
 
-// passa um vetor para a figura
-void figure::setVector(std::vector<point> v) {
-    pontos = v;
-}
-
-
-figure generate::createPlane(float x, float z) {
-
-    figure f;
+    utils::figure f;
 
     float x1 = x / 2;
     float z1 = z / 2;
@@ -47,14 +28,14 @@ figure generate::createPlane(float x, float z) {
 }
 
 
-figure generate::createBox(float x, float y, float z, int camadas) {
-    figure f;
+utils::figure generate::createBox(float x, float y, float z, int camadas) {
+    utils::figure f;
 
     float x1 = x / 2;
     float z1 = z / 2;
-    float camadaX = camadas / x;
-    float camadaY = camadas / y;
-    float camadaZ = camadas / z;
+    float camadaX = x / camadas;
+    float camadaY = y / camadas;
+    float camadaZ = z / camadas;
     int i, j;
 
     // Desenhar a base
@@ -178,34 +159,40 @@ figure generate::createBox(float x, float y, float z, int camadas) {
     return f;
 }
 
-figure generate::createSphere(float raio, int stacks, int slices)
-{
-    figure f;
+utils::figure generate::createSphere(float radius, int slices, int stacks){
+    utils::figure f;
+
 
     float delta1 = M_PI / stacks;
     float delta2 = 2 * M_PI / slices;
-    float angulo1, angulo2, temp, x, y, z;
 
-    for (int i = 0; i < stacks; i++) {
+    for (float i = -M_PI / 2; i < M_PI / 2; i += delta1) {
 
-        angulo1 = -M_PI / 2.0 + i * delta1;
-        temp = raio * cos(angulo1);
-        y = raio * sin(angulo1);
+        double aux1 = double(i) + double(delta1);
 
-        for (int j = 0; j < slices; j++) {
 
-            angulo2 = j * delta2;
-            x = temp * sin(angulo2);
-            z = temp * cos(angulo2);
+        for (float j = 0; j < 2 * M_PI; j += delta2) {
 
-            f.addPoint(x, y, z);
+            double aux2 = double(j) + double(delta2);
+
+            //Triângulo 1
+            f.addPoint(cos(aux1) * sin(j) * radius, sin(aux1) * radius, cos(aux1)* cos(j)* radius);
+            f.addPoint(cos(i) * sin(j) * radius, sin(i) * radius, cos(i) * cos(j) * radius);
+            f.addPoint(cos(i) * sin(aux2) * radius,sin(i) * radius, cos(i) * cos(aux2) * radius);
+
+            //Triângulo 2
+            f.addPoint(cos(aux1) * sin(j) * radius, sin(aux1) * radius, cos(aux1)* cos(j)* radius);
+            f.addPoint(cos(i) * sin(aux2) * radius, sin(i) * radius, cos(i)* cos(aux2)* radius);
+            f.addPoint(cos(aux1) * sin(aux2) * radius, sin(aux1) * radius, cos(aux1)* cos(aux2)* radius);
+
         }
     }
+
     return f;
 }
 
-figure generate::createCone(float radius, float height, int slices, int stacks) {
-    figure f;
+utils::figure generate::createCone(float radius, float height, int slices, int stacks) {
+    utils::figure f;
 
     float theta = 0;
     float nextTheta = 0;

@@ -101,6 +101,7 @@ gerador: CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o
 gerador: CMakeFiles/gerador.dir/build.make
 gerador: libgeradorLib.a
 gerador: libLib.a
+gerador: libutilsLib.a
 gerador: CMakeFiles/gerador.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gerador"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gerador.dir/link.txt --verbose=$(VERBOSE)

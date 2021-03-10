@@ -3,6 +3,7 @@
 
 CMakeFiles/motor.dir/src/Motor/motor.cpp.o: ../src/Motor/drawFunctions.hpp
 CMakeFiles/motor.dir/src/Motor/motor.cpp.o: ../src/Motor/motor.cpp
+CMakeFiles/motor.dir/src/Motor/motor.cpp.o: ../src/Utils/utils.hpp
 CMakeFiles/motor.dir/src/Motor/motor.cpp.o: ../src/tinyXML/tinystr.h
 CMakeFiles/motor.dir/src/Motor/motor.cpp.o: ../src/tinyXML/tinyxml.h
 

@@ -4,22 +4,20 @@
 #include <fstream>
 #include <string>
 #include "../tinyXML/tinyxml.h"
+#include "../Utils/utils.hpp"
+
+#ifdef __APPLE__
+#include <GLUT/glut.h>
+#else
+#include <GL/glut.h>
+#endif
 
 
 namespace draw {
-    struct point {
-        float x;
-        float y;
-        float z;
-    };
 
-    class figure {
-        std::vector<point> pontos;
-    private:
-        void drawTriangle(point, point, point);
-    public:
-        void addPoint(float, float, float);
-        void drawFigure();
-        void drawReferencial();
-    };
+
+    void drawTriangle(utils::point, utils::point, utils::point);
+    void drawFigure(utils::figure);
+    void drawReferencial();
+
 }
