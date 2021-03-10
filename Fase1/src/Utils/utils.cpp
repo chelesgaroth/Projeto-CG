@@ -1,7 +1,14 @@
-#define _USE_MATH_DEFINES
-#include <cmath>
-
 #include "utils.hpp"
+
+#ifdef __unix__
+#include <unistd.h>
+#define getDir getcwd
+static const std::string slash = "/";
+#else
+#include <direct.h>
+#define getDir _getcwd
+static const std::string slash = "\\";
+#endif
 
 using namespace utils;
 
@@ -14,12 +21,7 @@ void figure::addPoint(float a, float b, float c) {
     pontos.push_back(p);
 }
 
-// retorna o vetor de pontos da figura
-std::vector<point> figure::getVector() {
-    return pontos;
-}
-
-// passa um vetor para a figura
-void figure::setVector(std::vector<point> v) {
-    pontos = v;
+std::string utils::getPath(){
+    char path[90];
+    return getDir(path, 90) + slash + "3dFiles" + slash;
 }

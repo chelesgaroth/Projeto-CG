@@ -3,13 +3,9 @@
 
 #include "calculaVertices.hpp"
 
-using namespace generate;
+figure generate::createPlane(float x, float z) {
 
-
-
-utils::figure generate::createPlane(float x, float z) {
-
-    utils::figure f;
+    figure f;
 
     float x1 = x / 2;
     float z1 = z / 2;
@@ -28,8 +24,8 @@ utils::figure generate::createPlane(float x, float z) {
 }
 
 
-utils::figure generate::createBox(float x, float y, float z, int camadas) {
-    utils::figure f;
+figure generate::createBox(float x, float y, float z, int camadas) {
+    figure f;
 
     float x1 = x / 2;
     float z1 = z / 2;
@@ -74,6 +70,7 @@ utils::figure generate::createBox(float x, float y, float z, int camadas) {
 
             auxZ += camadaZ;
         }
+        auxZ = -z1;
         auxX += camadaX;
     }
 
@@ -94,6 +91,7 @@ utils::figure generate::createBox(float x, float y, float z, int camadas) {
 
             auxZ -= camadaZ;
         }
+        auxZ = z1;
         auxY -= camadaY;
     }
 
@@ -114,6 +112,7 @@ utils::figure generate::createBox(float x, float y, float z, int camadas) {
 
             auxZ += camadaZ;
         }
+        auxZ = -z1;
         auxY -= camadaY;
     }
 
@@ -134,6 +133,7 @@ utils::figure generate::createBox(float x, float y, float z, int camadas) {
 
             auxX += camadaX;
         }
+        auxX = -x1;
         auxY -= camadaY;
     }
 
@@ -154,14 +154,14 @@ utils::figure generate::createBox(float x, float y, float z, int camadas) {
 
             auxX -= camadaX;
         }
+        auxX = x1;
         auxY -= camadaY;
     }
     return f;
 }
 
-utils::figure generate::createSphere(float radius, int slices, int stacks){
-    utils::figure f;
-
+figure generate::createSphere(float radius, int slices, int stacks){
+    figure f;
 
     float delta1 = M_PI / stacks;
     float delta2 = 2 * M_PI / slices;
@@ -191,8 +191,8 @@ utils::figure generate::createSphere(float radius, int slices, int stacks){
     return f;
 }
 
-utils::figure generate::createCone(float radius, float height, int slices, int stacks) {
-    utils::figure f;
+figure generate::createCone(float radius, float height, int slices, int stacks) {
+    figure f;
 
     float theta = 0;
     float nextTheta = 0;

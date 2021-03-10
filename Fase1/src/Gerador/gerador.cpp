@@ -1,16 +1,19 @@
-#include <iostream>
-
 #include "../tinyXML/tinyxml.h"
 #include "calculaVertices.hpp"
 
 
+
 using namespace std;
+using namespace generate;
 TiXmlDocument doc;
 
 
 int write_XML(string file) {
 
-    if(!(doc.LoadFile("scenes.xml"))){
+    string xml = getPath() + "scenes.xml";
+
+
+    if(!(doc.LoadFile(xml.c_str()))){
         TiXmlElement *element = new TiXmlElement("Scene");
         doc.LinkEndChild(element);
         TiXmlElement *element2 = new TiXmlElement("Model");
@@ -37,36 +40,37 @@ int write_XML(string file) {
             fileLog->InsertEndChild(newCategory2);
         }
     }
-    doc.SaveFile("scenes.xml");
+    doc.SaveFile(xml.c_str());
 }
 
 
-int createFileType (vector<utils::point> vertices, string name){
+int createFileType (vector<point> vertices, string name){
 
     fstream file;
+
     // in out(write) mode
     // ios::out Open for output operations.
-    file.open(name,ios::out);
-    for(int i=0; i< vertices.size(); i++){
-        file << vertices[i].x << " ";
-        file << vertices[i].y << " ";
-        file << vertices[i].z << " ";
+    file.open(getPath() + name,ios::out);
+    for(point p : vertices){
+        file << p.x << " ";
+        file << p.y << " ";
+        file << p.z << " ";
         file << "\n";
     }
 
-
     if(!file){
-        cout<<"Error in creating file!!!";
-        return 0;
+        cout<<"\n       Error in creating file!!!\n";
+        return -1;
     }
     cout<<"File created successfully.";
     file.close();
+    return 0;
 }
 
 
 int main(int argc, char* argv[]) {
 
-    utils::figure f;
+    figure f;
 
     //Gerar os vértices para o desenho do plano e transcrever para o ficheiro .3d
     if((strcmp(argv[1],"Plane")==0)&&(argc==5)) {
@@ -74,11 +78,13 @@ int main(int argc, char* argv[]) {
         float x = std::stof(argv[2]);
         float z = std::stof(argv[3]);
 
-        f = generate::createPlane(x, z);
+        f = createPlane(x, z);
 
-        createFileType(f.getVector(), argv[4]);
-        write_XML(argv[4]);
-        std::cout << "Done\n" << std::endl;
+        if(createFileType(f.pontos, argv[4])==0){
+            write_XML(argv[4]);
+            std::cout << "Done\n" << std::endl;
+        }
+
     }
 
         //Gerar os vértices para o desenho do cubo/caixa e transcrever para o ficheiro .3d
@@ -90,11 +96,12 @@ int main(int argc, char* argv[]) {
         int camadas = 0;
         aux >> camadas;
 
-        f = generate::createBox(x, y, z, camadas);
+        f = createBox(x, y, z, camadas);
 
-        createFileType(f.getVector(), argv[6]);
-        write_XML(argv[6]);
-        std::cout << "Done\n" << std::endl;
+        if(createFileType(f.pontos, argv[6])==0) {
+            write_XML(argv[6]);
+            std::cout << "Done\n" << std::endl;
+        }
     }
 
         //Gerar os vértices para o desenho da esfera e transcrever para o ficheiro .3d
@@ -107,11 +114,12 @@ int main(int argc, char* argv[]) {
         int stacks = 0;
         aux2 >> stacks;
 
-        f = generate::createSphere(radius, stacks, slices);
+        f = createSphere(radius, stacks, slices);
 
-        createFileType(f.getVector(), argv[5]);
-        write_XML(argv[5]);
-        std::cout << "Done\n" << std::endl;
+        if(createFileType(f.pontos, argv[5])==0) {
+            write_XML(argv[5]);
+            std::cout << "Done\n" << std::endl;
+        }
 
     }
 
@@ -126,15 +134,16 @@ int main(int argc, char* argv[]) {
         int stacks = 0;
         aux2 >> stacks;
 
-        f = generate::createCone(radius, height, stacks, slices);
+        f = createCone(radius, height, stacks, slices);
 
-        createFileType(f.getVector(), argv[6]);
-        write_XML(argv[6]);
-        std::cout << "Done\n" << std::endl;
+        if(createFileType(f.pontos, argv[6])==0) {
+            write_XML(argv[6]);
+            std::cout << "Done\n" << std::endl;
+        }
 
     }
 
-        //Tela de ajuda e comandos
+    //Tela de ajuda e comandos
     else if(strcmp(argv[1], "-help")==0){
         std::cout << "Plane         [x] [y] [file.3d]\n"
                      "Box           [x] [y] [z] [divisions per edge] [file.3d]\n"

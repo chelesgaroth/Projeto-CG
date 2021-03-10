@@ -1,9 +1,3 @@
-#include <cstdlib>
-#include <vector>
-#include <iostream>
-#include <fstream>
-#include <string>
-#include "../tinyXML/tinyxml.h"
 #include "../Utils/utils.hpp"
 
 #ifdef __APPLE__
@@ -13,10 +7,11 @@
 #endif
 
 
+
+using namespace utils;
+
 namespace draw {
 
-
-    void drawTriangle(utils::point, utils::point, utils::point);
     void drawFigure(utils::figure);
     void drawReferencial();
 

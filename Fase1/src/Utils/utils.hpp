@@ -7,8 +7,7 @@
 #include <sstream>
 
 
-namespace utils
-{
+namespace utils{
     struct point {
         float x;
         float y;
@@ -18,10 +17,10 @@ namespace utils
     class figure {
 
     public:
-        void addPoint(float, float, float);
-        std::vector<point> getVector();
-        void setVector(std::vector<point>);
-
         std::vector<point> pontos;
+        void addPoint(float, float, float);
     };
+
+    std::string getPath();
+
 }

@@ -7,10 +7,12 @@
 #IncludeRegexTransform: 
 
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Utils/utils.cpp
-cmath
--
 utils.hpp
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Utils/utils.hpp
+unistd.h
+-
+direct.h
+-
 
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Utils/utils.hpp
 cstdio

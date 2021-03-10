@@ -11,18 +11,6 @@ drawFunctions.hpp
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.hpp
 
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Motor/drawFunctions.hpp
-cstdlib
--
-vector
--
-iostream
--
-fstream
--
-string
--
-../tinyXML/tinyxml.h
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.h
 ../Utils/utils.hpp
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/Utils/utils.hpp
 GLUT/glut.h
@@ -45,30 +33,4 @@ fstream
 -
 sstream
 -
-
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.h
-assert.h
--
-string.h
--
-
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinyxml.h
-ctype.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-assert.h
--
-string
--
-iostream
--
-sstream
--
-tinystr.h
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase1/src/tinyXML/tinystr.h
 

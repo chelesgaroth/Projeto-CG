@@ -1,7 +1,7 @@
 #include "drawFunctions.hpp"
 
-
-void draw::drawTriangle(utils::point p1, utils::point p2, utils::point p3) {
+// funçao auxiliar que desenha triangulos
+void drawTriangle(point p1, point p2, point p3) {
 
 	glBegin(GL_TRIANGLES);
 
@@ -17,11 +17,12 @@ void draw::drawTriangle(utils::point p1, utils::point p2, utils::point p3) {
 
 
 // recebe a lista de pontos, e o n�mero de pontos contidos na lista
-void draw::drawFigure(utils::figure f) {
+void draw::drawFigure(figure f) {
 	int i;
-	for (i = 0; i+2 <= f.pontos.size(); i+=3) {                                // MENOR PARA MENOR OU IGUAL !!!!!!!
+	int n = f.pontos.size();
+	for (i = 0; i+2 <= n; i+=3) {
 		//desenha os triangulos partindo da lista de pontos da figura
-		draw::drawTriangle(f.pontos[i], f.pontos[i + 1], f.pontos[i + 2]);
+		drawTriangle(f.pontos[i], f.pontos[i + 1], f.pontos[i + 2]);
 	}
 }
 

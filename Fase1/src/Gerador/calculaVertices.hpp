@@ -1,14 +1,12 @@
-#include <cstdlib>
-#include <vector>
-#include <string>
 
 #include "../Utils/utils.hpp"
 
+using namespace utils;
 
 namespace generate{
 
-    utils::figure createPlane(float, float);
-    utils::figure createBox(float, float, float, int);
-    utils::figure createSphere(float, int, int);
-    utils::figure createCone(float, float, int, int);
+    figure createPlane(float, float);
+    figure createBox(float, float, float, int);
+    figure createSphere(float, int, int);
+    figure createCone(float, float, int, int);
 }
