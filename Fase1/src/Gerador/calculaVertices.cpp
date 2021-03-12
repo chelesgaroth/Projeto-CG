@@ -50,6 +50,7 @@ figure generate::createBox(float x, float y, float z, int camadas) {
 
             auxZ += camadaZ;
         }
+        auxZ = -z1;
         auxX += camadaX;
     }
 
