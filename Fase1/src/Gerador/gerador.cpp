@@ -26,6 +26,7 @@ int write_XML(string file, string fxml) {
         TiXmlElement* fileLog = docHandle.FirstChild("Scene").ToElement();
         TiXmlElement* root = doc.RootElement();
         if (fileLog) {
+            /*
             //Verifica se já existe uma entrada para esse mesmo ficheiro .3d no XML
             for(TiXmlElement* aux = root->FirstChild()->ToElement(); aux!=nullptr; aux = aux->NextSiblingElement()) {
                 const char* ficheiro1 = aux->Attribute("file");
@@ -33,8 +34,7 @@ int write_XML(string file, string fxml) {
                     std::cout <<"\nFicheiro já existente atualizado em XML\n"<< std::endl;
                     return -1;
                 }
-            }
-
+            }*/
             TiXmlElement newCategory2("Model");
             newCategory2.SetAttribute("file", file.c_str());
             fileLog->InsertEndChild(newCategory2);
