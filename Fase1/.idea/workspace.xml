@@ -16,15 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="937460f4-fd10-4e31-af6c-21e8453b9e1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/build/3dFiles/box.3d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/3dFiles/cone.3d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/3dFiles/plane.3d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/3dFiles/sphere.3d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/gerador" beforeDir="false" afterPath="$PROJECT_DIR$/build/gerador" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libgeradorLib.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/libgeradorLib.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gerador/calculaVertices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/calculaVertices.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gerador/gerador.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/gerador.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Motor/motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Motor/motor.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,11 +97,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="CMake Application.gerador" />
       <item itemvalue="CMake Application.geradorLib" />
@@ -135,6 +126,8 @@
       <workItem from="1615332789353" duration="4606000" />
       <workItem from="1615366753711" duration="21424000" />
       <workItem from="1615559664528" duration="278000" />
+      <workItem from="1615563784232" duration="636000" />
+      <workItem from="1615724068743" duration="1072000" />
     </task>
     <servers />
   </component>

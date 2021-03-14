@@ -109,9 +109,9 @@ int lerFicheiroXML(std::string xml) {
                 return -1;
             }
         }
-        //No final de ler o ficheiro XML apaga-o
+       /* //Este pedaço de código seria para apagar o ficheiro XML
         if( remove(name.c_str()) != 0 )
-            perror( "Error deleting file" );
+            perror( "Error deleting file" );*/
     }
     else{
         std::cout <<"File does not exist!\n" << std::endl;
