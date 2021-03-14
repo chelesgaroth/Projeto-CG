@@ -16,8 +16,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="937460f4-fd10-4e31-af6c-21e8453b9e1d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build/3dFiles/exemplo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/3dFiles/exemplo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gerador/gerador.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/gerador.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/3dFiles/sphere.3d" beforeDir="false" afterPath="$PROJECT_DIR$/build/3dFiles/sphere.3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/geradorLib.dir/src/Gerador/calculaVertices.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/gerador" beforeDir="false" afterPath="$PROJECT_DIR$/build/gerador" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libgeradorLib.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/libgeradorLib.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gerador/calculaVertices.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerador/calculaVertices.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +66,12 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.motor">
-    <configuration name="Lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Fase1" TARGET_NAME="Lib" CONFIG_NAME="Debug">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="Lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Fase1" TARGET_NAME="Lib" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -92,6 +99,11 @@
     <configuration name="utilsLib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Fase1" TARGET_NAME="utilsLib" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -124,7 +136,8 @@
       <workItem from="1615366753711" duration="21424000" />
       <workItem from="1615559664528" duration="278000" />
       <workItem from="1615563784232" duration="636000" />
-      <workItem from="1615724068743" duration="1828000" />
+      <workItem from="1615724068743" duration="2253000" />
+      <workItem from="1615740086907" duration="4629000" />
     </task>
     <servers />
   </component>

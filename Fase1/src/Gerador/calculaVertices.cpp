@@ -3,6 +3,8 @@
 
 #include "calculaVertices.hpp"
 
+
+
 figure generate::createPlane(float x, float z) {
 
     figure f;
@@ -169,12 +171,12 @@ figure generate::createSphere(float radius, int slices, int stacks){
 
     for (float i = -M_PI / 2; i < M_PI / 2; i += delta1) {
 
-        double aux1 = double(i) + double(delta1);
+        float aux1 = i + delta1;
 
 
-        for (float j = 0; j < 2 * M_PI; j += delta2) {
+        for (float j = 0; j < 2 * M_PI - delta2; j += delta2) {
 
-            double aux2 = double(j) + double(delta2);
+            float aux2 = j + delta2;
 
             //Triângulo 1
             f.addPoint(cos(aux1) * sin(j) * radius, sin(aux1) * radius, cos(aux1)* cos(j)* radius);
