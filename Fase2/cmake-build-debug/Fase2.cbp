@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Fase2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="utilsLib">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/libutilsLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 utilsLib"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="utilsLib/fast">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/libutilsLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 utilsLib/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geradorLib">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/libgeradorLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 geradorLib"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geradorLib/fast">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/libgeradorLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 geradorLib/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="motor">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/motor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 motor"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="motor/fast">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/motor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 motor/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="motorLib">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/libmotorLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 motorLib"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="motorLib/fast">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/libmotorLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 motorLib/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gerador">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/gerador" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 gerador"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gerador/fast">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/gerador" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 gerador/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lib">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/libLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lib"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lib/fast">
+				<Option output="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/libLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lib/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/raquel/Desktop/Universidade/2º\ Semestre/CG/Projeto-CG/Fase2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Gerador/calculaVertices.cpp">
+			<Option target="geradorLib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Gerador/calculaVertices.hpp">
+			<Option target="geradorLib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Gerador/gerador.cpp">
+			<Option target="gerador"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Motor/drawFunctions.cpp">
+			<Option target="motorLib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Motor/drawFunctions.hpp">
+			<Option target="motorLib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Motor/motor.cpp">
+			<Option target="motor"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Utils/utils.cpp">
+			<Option target="utilsLib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Utils/utils.hpp">
+			<Option target="utilsLib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinystr.cpp">
+			<Option target="Lib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinystr.h">
+			<Option target="Lib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinyxml.cpp">
+			<Option target="Lib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinyxml.h">
+			<Option target="Lib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinyxmlerror.cpp">
+			<Option target="Lib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinyxmlparser.cpp">
+			<Option target="Lib"/>
+		</Unit>
+		<Unit filename="/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

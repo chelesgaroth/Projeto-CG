@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Gerador/calculaVertices.cpp
+cmath
+-
+calculaVertices.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Gerador/calculaVertices.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Gerador/calculaVertices.hpp
+../Utils/utils.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Utils/utils.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Utils/utils.hpp
+cstdio
+-
+cstdlib
+-
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+sstream
+-
+

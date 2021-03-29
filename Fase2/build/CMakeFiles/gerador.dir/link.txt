@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/gerador.dir/src/Gerador/gerador.cpp.o  -o gerador  libgeradorLib.a libLib.a libutilsLib.a 

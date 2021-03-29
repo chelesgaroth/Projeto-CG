@@ -1,0 +1,72 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Motor/drawFunctions.hpp
+../Utils/utils.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Utils/utils.hpp
+GLUT/glut.h
+-
+GL/glut.h
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Motor/motor.cpp
+drawFunctions.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Motor/drawFunctions.hpp
+../tinyXML/tinyxml.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinyxml.h
+iostream
+-
+iterator
+-
+map
+-
+tgmath.h
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/Utils/utils.hpp
+cstdio
+-
+cstdlib
+-
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+sstream
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinystr.h
+assert.h
+-
+string.h
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinyxml.h
+ctype.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+string
+-
+iostream
+-
+sstream
+-
+tinystr.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Projeto-CG/Fase2/src/tinyXML/tinystr.h
+
