@@ -12,7 +12,7 @@ $ make
 ```
 * Run Engine:
 ```bash
-./motor scenes.xml
+./motor sistemaSolar.xml
 ```
 ## Authors
 * Ana Filipa Pereira
