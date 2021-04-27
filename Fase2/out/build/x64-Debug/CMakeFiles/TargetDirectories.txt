@@ -1,0 +1,9 @@
+C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug/CMakeFiles/structsUtils.dir
+C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug/CMakeFiles/motor.dir
+C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug/CMakeFiles/motorLib.dir
+C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug/CMakeFiles/gerador.dir
+C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug/CMakeFiles/Lib.dir
+C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug/CMakeFiles/geradorLib.dir
+C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug/CMakeFiles/utilsLib.dir
+C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

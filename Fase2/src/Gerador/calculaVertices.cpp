@@ -168,29 +168,26 @@ figure generate::createSphere(float radius, int slices, int stacks){
 
     float delta1 = M_PI / stacks;
     float delta2 = 2 * M_PI / slices;
+    float theta1 = -M_PI / 2;
+    float theta2 = 0;
 
-    for (float i = -M_PI / 2; i < M_PI / 2; i += delta1) {
+    for (int i = 0; i < stacks; i++) {
 
-        float aux1 = i + delta1;
-
-
-        for (float j = 0; j < 2 * M_PI - delta2; j += delta2) {
-
-            float aux2 = j + delta2;
-
+        for (int j = 0; j < slices; j++) {
+            theta2 = j * delta2;
             //Triângulo 1
-            f.addPoint(cos(aux1) * sin(j) * radius, sin(aux1) * radius, cos(aux1)* cos(j)* radius);
-            f.addPoint(cos(i) * sin(j) * radius, sin(i) * radius, cos(i) * cos(j) * radius);
-            f.addPoint(cos(i) * sin(aux2) * radius,sin(i) * radius, cos(i) * cos(aux2) * radius);
+            f.addPoint(cos(theta1 + delta1) * sin(theta2) * radius, sin(theta1 + delta1) * radius, cos(theta1 + delta1) * cos(theta2) * radius);
+            f.addPoint(cos(theta1) * sin(theta2) * radius, sin(theta1) * radius, cos(theta1) * cos(theta2) * radius);
+            f.addPoint(cos(theta1) * sin(theta2 + delta2) * radius, sin(theta1) * radius, cos(theta1) * cos(theta2 + delta2) * radius);
 
             //Triângulo 2
-            f.addPoint(cos(aux1) * sin(j) * radius, sin(aux1) * radius, cos(aux1)* cos(j)* radius);
-            f.addPoint(cos(i) * sin(aux2) * radius, sin(i) * radius, cos(i)* cos(aux2)* radius);
-            f.addPoint(cos(aux1) * sin(aux2) * radius, sin(aux1) * radius, cos(aux1)* cos(aux2)* radius);
-
+            f.addPoint(cos(theta1 + delta1) * sin(theta2) * radius, sin(theta1 + delta1) * radius, cos(theta1 + delta1) * cos(theta2) * radius);
+            f.addPoint(cos(theta1) * sin(theta2 + delta2) * radius, sin(theta1) * radius, cos(theta1) * cos(theta2 + delta2) * radius);
+            f.addPoint(cos(theta1 + delta1) * sin(theta2 + delta2) * radius, sin(theta1 + delta1) * radius, cos(theta1 + delta1) * cos(theta2 + delta2) * radius);
         }
+        theta1 += delta1;
     }
-
+    
     return f;
 }
 
@@ -249,5 +246,42 @@ figure generate::createCone(float radius, float height, int slices, int stacks) 
         alt2 = alturas;
         theta = nextTheta;
     }
+    return f;
+}
+
+figure generate::createTorus(float raio_in, float raio_out, int slices, int stacks) {
+    figure f;
+
+    float delta1 = 2 * M_PI / slices;
+    float delta2 = 2 * M_PI / stacks;
+    float phi = 0;
+    float theta = 0;
+
+    for (int i = 0; i < slices; i++) {
+        for (int j = 0; j < stacks; j++) {
+
+            f.addPoint((raio_in + raio_out * cos(phi)) * cos(theta), (raio_in + raio_out * cos(phi)) * sin(theta), raio_out * sin(phi));
+
+            f.addPoint((raio_in + raio_out * cos(phi)) * cos(theta + delta1), (raio_in + raio_out * cos(phi)) * sin(theta + delta1), raio_out * sin(phi));
+
+            f.addPoint((raio_in + raio_out * cos(phi + delta2)) * cos(theta + delta1), (raio_in + raio_out * cos(phi + delta2)) * sin(theta + delta1),
+                raio_out * sin(phi + delta2));
+
+            f.addPoint((raio_in + raio_out * cos(phi + delta2)) * cos(theta + delta1), (raio_in + raio_out * cos(phi + delta2)) * sin(theta + delta1),
+                raio_out * sin(phi + delta2));
+
+            f.addPoint((raio_in + raio_out * cos(phi + delta2)) * cos(theta), (raio_in + raio_out * cos(phi + delta2)) * sin(theta),
+                raio_out * sin(phi + delta2));
+
+            f.addPoint((raio_in + raio_out * cos(phi)) * cos(theta), (raio_in + raio_out * cos(phi)) * sin(theta), raio_out * sin(phi));
+
+
+            phi = delta2 * (j + 1);
+        }
+
+        theta = delta1 * (i + 1);
+    }
+
+
     return f;
 }

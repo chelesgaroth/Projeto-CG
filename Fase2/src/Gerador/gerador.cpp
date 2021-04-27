@@ -14,28 +14,19 @@ int write_XML(string file, string fxml) {
 
 
     if(!(doc.LoadFile(xml.c_str()))){
-        TiXmlElement *element = new TiXmlElement("Scene");
+        TiXmlElement *element = new TiXmlElement("scene");
         doc.LinkEndChild(element);
-        TiXmlElement *element2 = new TiXmlElement("Model");
+        TiXmlElement *element2 = new TiXmlElement("model");
         element2->SetAttribute("file", file.c_str());
         element->LinkEndChild(element2);
         std::cout <<"\nXML File Created.\n"<< std::endl;
     }
     else{
         TiXmlHandle docHandle(&doc);
-        TiXmlElement* fileLog = docHandle.FirstChild("Scene").ToElement();
-        TiXmlElement* root = doc.RootElement();
+        TiXmlElement* fileLog = docHandle.FirstChild("scene").ToElement();
         if (fileLog) {
-            /*
-            //Verifica se já existe uma entrada para esse mesmo ficheiro .3d no XML
-            for(TiXmlElement* aux = root->FirstChild()->ToElement(); aux!=nullptr; aux = aux->NextSiblingElement()) {
-                const char* ficheiro1 = aux->Attribute("file");
-                if ( strcmp( ficheiro1, file.c_str()) == 0 ){
-                    std::cout <<"\nFicheiro já existente atualizado em XML\n"<< std::endl;
-                    return -1;
-                }
-            }*/
-            TiXmlElement newCategory2("Model");
+
+            TiXmlElement newCategory2("model");
             newCategory2.SetAttribute("file", file.c_str());
             fileLog->InsertEndChild(newCategory2);
         }
@@ -145,12 +136,33 @@ int main(int argc, char* argv[]) {
             }
         }
 
+            //Gerar os vértices para o desenho do torus e transcrever para o ficheiro .3d
+        else if ((strcmp(argv[1], "Torus") == 0) && (argc == 8)) {
+            float radius_in = std::stof(argv[2]);
+            float radius_out = std::stof(argv[3]);
+            stringstream aux(argv[4]);
+            int stacks = 0;
+            aux >> stacks;
+            stringstream aux2(argv[5]);
+            int slices = 0;
+            aux2 >> slices;
+
+            f = createTorus(radius_in, radius_out, slices, stacks);
+
+            if (createFileType(f.pontos, argv[6]) == 0) {
+                write_XML(argv[6],argv[7]);
+                std::cout << "Done\n" << std::endl;
+            }
+
+        }
+
             //Tela de ajuda e comandos
         else if (strcmp(argv[1], "-help") == 0) {
             std::cout << "Plane         [x] [y] [file.3d] [file.xml]\n"
                          "Box           [x] [y] [z] [divisions per edge] [file.3d] [file.xml]\n"
                          "Sphere        [radius] [slices] [stacks] [file.3d] [file.xml]\n"
-                         "Cone          [radius] [height] [slices] [stacks] [file.3d] [file.xml]\n" << std::endl;
+                         "Cone          [radius] [height] [slices] [stacks] [file.3d] [file.xml]\n"
+                         "Torus         [radius_OUT] [radius_IN] [stacks] [slices] [file.3d] [file.xml]\n" << std::endl;
         } else {
             std::cout << "\nMissing arguments\n" << std::endl;
         }

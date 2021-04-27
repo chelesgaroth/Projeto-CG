@@ -1,0 +1,104 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Fase1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lib-Debug-7dcadd56ecf97189e3a8.json",
+					"name" : "Lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gerador::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gerador-Debug-79edd75356bf724851b9.json",
+					"name" : "gerador",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "geradorLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-geradorLib-Debug-5693950708d58136f555.json",
+					"name" : "geradorLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor-Debug-174f583ea88782477993.json",
+					"name" : "motor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motorLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motorLib-Debug-8941861acddaf8f4a945.json",
+					"name" : "motorLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilsLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilsLib-Debug-0921ff35052949e916fe.json",
+					"name" : "utilsLib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase1/out/build/x64-Debug",
+		"source" : "C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

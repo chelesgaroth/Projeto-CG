@@ -1,0 +1,113 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Fase2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lib-Debug-2cb049586a1108403272.json",
+					"name" : "Lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gerador::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gerador-Debug-01c8a96d4c06b8149ba9.json",
+					"name" : "gerador",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "geradorLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-geradorLib-Debug-8e2b604d93e14a933cea.json",
+					"name" : "geradorLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motor-Debug-671073c37ce7dd6f2b7d.json",
+					"name" : "motor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "motorLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-motorLib-Debug-02503242370bb0da6f09.json",
+					"name" : "motorLib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "structsUtils::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-structsUtils-Debug-fd77ae069556b2d17570.json",
+					"name" : "structsUtils",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilsLib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilsLib-Debug-0c18726997e8456795a5.json",
+					"name" : "utilsLib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2/out/build/x64-Debug",
+		"source" : "C:/Users/ASUS/Desktop/MIEI/CG/Fase2/Fase2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

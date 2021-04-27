@@ -1,0 +1,16 @@
+<scene>
+	<group>
+		<translate time="10" >
+			<point X="1" Y="0" Z="1" />
+			<point X="0.707" Y="0.707" Z="1" />
+			<point X="0" Y="1" Z="1" />
+			<point X="-1" Y="0" Z="1" />
+		</translate>
+		<rotate time="10" axisX="0" axisY="1" axisZ="0" />
+	</group>
+	<group>
+		<rotate angle="-30" axisX="0" axisY="1" axisZ="0"/>
+		<color R="0.65" G="0.3" B="0.15"/>
+		<translate X="3" Y="0" Z="0"/>
+	</group>
+</scene>

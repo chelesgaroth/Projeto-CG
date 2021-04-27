@@ -1,0 +1,10 @@
+^C:\USERS\ASUS\DESKTOP\MIEI\CG\PROJETO-CG\FASE2\BUILD\CMAKEFILES\31C6118B168138C8DD3B91D33C41AECB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase2 -BC:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase2/build/Fase2.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

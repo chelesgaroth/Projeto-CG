@@ -39,6 +39,14 @@ add_library(
 		src/Utils/utils.hpp
 )
 
+add_library(
+		structsUtils
+		src/Structs/groupUtils.hpp 
+		src/Structs/groupUtils.cpp
+		src/Structs/transUtils.hpp 
+		src/Structs/transUtils.cpp
+)
+
 target_link_libraries(gerador geradorLib)
 target_link_libraries(gerador Lib)
 target_link_libraries(gerador utilsLib)
@@ -46,6 +54,7 @@ target_link_libraries(gerador utilsLib)
 target_link_libraries(motor motorLib)
 target_link_libraries(motor Lib)
 target_link_libraries(motor utilsLib)
+target_link_libraries(motor structsUtils)
 
 
 
