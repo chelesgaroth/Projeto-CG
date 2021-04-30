@@ -1,0 +1,8 @@
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/cmake-build-debug/CMakeFiles/utilsLib.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/cmake-build-debug/CMakeFiles/motor.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/cmake-build-debug/CMakeFiles/motorUtils.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/cmake-build-debug/CMakeFiles/gerador.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/cmake-build-debug/CMakeFiles/Lib.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/cmake-build-debug/CMakeFiles/geradorUtils.dir

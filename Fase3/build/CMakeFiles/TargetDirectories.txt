@@ -1,9 +1,8 @@
-C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase3/build/CMakeFiles/structsUtils.dir
-C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase3/build/CMakeFiles/motor.dir
-C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase3/build/CMakeFiles/motorLib.dir
-C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase3/build/CMakeFiles/gerador.dir
-C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase3/build/CMakeFiles/Lib.dir
-C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase3/build/CMakeFiles/geradorLib.dir
-C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase3/build/CMakeFiles/utilsLib.dir
-C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase3/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/ASUS/Desktop/MIEI/CG/Projeto-CG/Fase3/build/CMakeFiles/ZERO_CHECK.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/build/CMakeFiles/edit_cache.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/build/CMakeFiles/motorUtils.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/build/CMakeFiles/utilsLib.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/build/CMakeFiles/geradorUtils.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/build/CMakeFiles/Lib.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/build/CMakeFiles/gerador.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/build/CMakeFiles/rebuild_cache.dir
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/build/CMakeFiles/motor.dir

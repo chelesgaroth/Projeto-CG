@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstructsUtils.a CMakeFiles/structsUtils.dir/src/Motor/MotorUtils/groupStruct.cpp.o CMakeFiles/structsUtils.dir/src/Motor/MotorUtils/transforms.cpp.o CMakeFiles/structsUtils.dir/src/Motor/MotorUtils/catmullrom.cpp.o
+/usr/bin/ranlib libstructsUtils.a

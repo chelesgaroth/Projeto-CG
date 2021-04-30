@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/bezier.cpp
+headers/bezier.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/headers/bezier.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/calculaPrimitivas.cpp
+cmath
+-
+headers/calculaPrimitivas.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/headers/calculaPrimitivas.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/headers/bezier.hpp
+../../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+../../../Utils/headers/matrixAux.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/headers/calculaPrimitivas.hpp
+../../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+cstdio
+-
+cstdlib
+-
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+sstream
+-
+map
+-
+

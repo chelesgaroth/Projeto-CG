@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmotorUtils.a CMakeFiles/motorUtils.dir/src/Motor/MotorUtils/drawFunctions.cpp.o CMakeFiles/motorUtils.dir/src/Motor/MotorUtils/groupStruct.cpp.o CMakeFiles/motorUtils.dir/src/Motor/MotorUtils/transforms.cpp.o CMakeFiles/motorUtils.dir/src/Motor/MotorUtils/catmullrom.cpp.o
+/usr/bin/ranlib libmotorUtils.a

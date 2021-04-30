@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/catmullrom.cpp
+cmath
+-
+headers/catmullrom.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/catmullrom.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/groupStruct.cpp
+headers/groupStruct.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/groupStruct.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/catmullrom.hpp
+headers/transforms.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/headers/transforms.hpp
+../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/Utils/headers/pointFigure.hpp
+../../Utils/headers/matrixAux.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/Utils/headers/matrixAux.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/groupStruct.hpp
+../../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+transforms.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/transforms.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/transforms.hpp
+../../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/transforms.cpp
+cmath
+-
+headers/transforms.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/transforms.hpp
+headers/catmullrom.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/catmullrom.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+cstdio
+-
+cstdlib
+-
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+sstream
+-
+map
+-
+

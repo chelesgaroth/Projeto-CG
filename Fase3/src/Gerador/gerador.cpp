@@ -1,6 +1,6 @@
 #include "../tinyXML/tinyxml.h"
-#include "calculaVertices.hpp"
-
+#include "GeradorUtils/headers/calculaPrimitivas.hpp"
+#include "GeradorUtils/headers/bezier.hpp"
 
 
 using namespace std;
@@ -59,7 +59,9 @@ int createFileType (vector<point> vertices, string name){
     return 0;
 }
 
-bool readBezier(char* file, size_t t) {
+
+
+figure readBezier(char* file, size_t t) {
     fstream f;
     f.open(getPath() + file);
     std::string line;      // String auxiliar que irá corresponder a uma 
@@ -78,25 +80,27 @@ bool readBezier(char* file, size_t t) {
             if (linhaNum >= 1 && linhaNum <= numPatches) {
                 std::string token;
                 size_t pos = 0;
-                
-                while ((pos = line.find(",")) != std::string::npos) {
-                    token = line.substr(0, pos);
-                    auxIndices.push_back(atoi(line.c_str()));
-                    line.erase(0, pos + delimiter.length());
+                std::istringstream tokenizer(line);
+                for (size_t i = 0; i < 15; i++) {
+                    std::getline(tokenizer, token, ',');
+                    auxIndices.push_back(stof(token));
                 }
+                std::getline(tokenizer, token);
+                auxIndices.push_back(stof(token));
             }
             if (linhaNum > numPatches + 1) {
                 std::string token;
                 size_t pos = 0;
                 size_t i = 0;
                 float coord[3];
-                while ((pos = line.find(",")) != std::string::npos) {
-                    token = line.substr(0, pos);
-                    coord[i] = atof(line.c_str());
-                    line.erase(0, pos + delimiter.length());
-                    i++;
-                }
-                auxVertices.addPoint(coord[0], coord[1], coord[2]);
+                string tokens[3];
+                std::istringstream tokenizer(line);
+
+                std::getline(tokenizer, tokens[0], ','); // then get the tokens from it
+                std::getline(tokenizer, tokens[1], ',');
+                std::getline(tokenizer, tokens[2]);
+
+                auxVertices.addPoint(stof(tokens[0]), stof(tokens[1]), stof(tokens[2]));
                 
             }
             linhaNum++;
@@ -104,11 +108,15 @@ bool readBezier(char* file, size_t t) {
     }
     else {
         std::cout << "File not found" << std::endl;
-        return false;
+        figure fig;
+        return fig;
     }
-    // chamar funcao
     f.close();
-    return true;
+    
+    
+    figure fig = bezier::generateBezierPatches(auxVertices, auxIndices, t);
+
+    return fig;
 }
 
 
@@ -208,15 +216,31 @@ int main(int argc, char* argv[]) {
             }
 
         }
+        //Gerar os vértices para o desenho da superficie de Bezier e transcrever para o ficheiro .3d
+        else if ((strcmp(argv[1], "Bezier") == 0) && (argc == 6)) {
+            char* patchFile = argv[2];
+            stringstream aux(argv[3]);
+            int tecelation = 0;
+            aux >> tecelation;
+            
 
+            f = readBezier(patchFile,tecelation);
+            if (!f.pontos.empty()) {
+                if (createFileType(f.pontos, argv[4]) == 0) {
+                    write_XML(argv[4], argv[5]);
+                    std::cout << "Done\n" << std::endl;
+                }
+            }
+
+        }
             //Tela de ajuda e comandos
         else if (strcmp(argv[1], "-help") == 0) {
-            readBezier("teapot.patch", 1);
             std::cout << "Plane         [x] [y] [file.3d] [file.xml]\n"
                          "Box           [x] [y] [z] [divisions per edge] [file.3d] [file.xml]\n"
                          "Sphere        [radius] [slices] [stacks] [file.3d] [file.xml]\n"
                          "Cone          [radius] [height] [slices] [stacks] [file.3d] [file.xml]\n"
-                         "Torus         [radius_OUT] [radius_IN] [stacks] [slices] [file.3d] [file.xml]\n" << std::endl;
+                         "Torus         [radius_OUT] [radius_IN] [stacks] [slices] [file.3d] [file.xml]\n"
+                         "Bezier        [patchFile] [tecelation] [file.3d] [file.xml]\n" << std::endl;
             
         } else {
             std::cout << "\nMissing arguments\n" << std::endl;

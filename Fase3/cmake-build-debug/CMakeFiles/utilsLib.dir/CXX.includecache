@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/matrixAux.cpp
+valarray
+-
+headers/matrixAux.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
+

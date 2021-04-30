@@ -1,0 +1,72 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/headers/bezier.hpp
+../../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+../../../Utils/headers/matrixAux.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/headers/calculaPrimitivas.hpp
+../../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/gerador.cpp
+../tinyXML/tinyxml.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/tinyXML/tinyxml.h
+GeradorUtils/headers/calculaPrimitivas.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/headers/calculaPrimitivas.hpp
+GeradorUtils/headers/bezier.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Gerador/GeradorUtils/headers/bezier.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+cstdio
+-
+cstdlib
+-
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+sstream
+-
+map
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/tinyXML/tinystr.h
+assert.h
+-
+string.h
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/tinyXML/tinyxml.h
+ctype.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+string
+-
+iostream
+-
+sstream
+-
+tinystr.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/tinyXML/tinystr.h
+

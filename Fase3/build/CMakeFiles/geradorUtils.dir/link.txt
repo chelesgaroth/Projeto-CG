@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgeradorUtils.a  CMakeFiles/geradorUtils.dir/src/Gerador/GeradorUtils/calculaPrimitivas.cpp.o CMakeFiles/geradorUtils.dir/src/Gerador/GeradorUtils/bezier.cpp.o
+/usr/bin/ranlib libgeradorUtils.a

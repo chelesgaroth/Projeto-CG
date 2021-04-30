@@ -8,6 +8,8 @@ if  (WIN32)
 else(WIN32) #Linux and Mac
 	find_package(OpenGL REQUIRED)
 	find_package(GLUT REQUIRED)
+	find_package(GLEW REQUIRED)
+
 endif(WIN32)
 
 add_executable(motor src/Motor/motor.cpp)
@@ -18,43 +20,43 @@ add_library(
 		src/tinyXML/tinystr.cpp
 		src/tinyXML/tinyxml.cpp
 		src/tinyXML/tinyxmlerror.cpp
-		src/tinyXML/tinyxmlparser.cpp
-)
+		src/tinyXML/tinyxmlparser.cpp)
+
+
 
 add_library(
-		motorLib
-		src/Motor/drawFunctions.cpp
-		src/Motor/drawFunctions.hpp
-)
-
-add_library(
-		geradorLib
-		src/Gerador/calculaVertices.cpp
-		src/Gerador/calculaVertices.hpp
-)
+		geradorUtils
+		src/Gerador/GeradorUtils/calculaPrimitivas.cpp
+		src/Gerador/GeradorUtils/headers/calculaPrimitivas.hpp
+		src/Gerador/GeradorUtils/bezier.cpp
+		src/Gerador/GeradorUtils/headers/bezier.hpp)
 
 add_library(
 		utilsLib
-		src/Utils/utils.cpp
-		src/Utils/utils.hpp
-)
+		src/Utils/pointFigure.cpp
+		src/Utils/headers/pointFigure.hpp
+		src/Utils/matrixAux.cpp
+		src/Utils/headers/matrixAux.hpp)
 
 add_library(
-		structsUtils
-		src/Structs/groupUtils.hpp 
-		src/Structs/groupUtils.cpp
-		src/Structs/transUtils.hpp 
-		src/Structs/transUtils.cpp
-)
+		motorUtils
+		src/Motor/MotorUtils/drawFunctions.cpp
+		src/Motor/MotorUtils/headers/drawFunctions.hpp
+		src/Motor/MotorUtils/headers/groupStruct.hpp
+		src/Motor/MotorUtils/groupStruct.cpp
+		src/Motor/MotorUtils/headers/transforms.hpp
+		src/Motor/MotorUtils/transforms.cpp
+		src/Motor/MotorUtils/headers/catmullrom.hpp
+		src/Motor/MotorUtils/catmullrom.cpp)
 
-target_link_libraries(gerador geradorLib)
+target_link_libraries(gerador geradorUtils)
 target_link_libraries(gerador Lib)
 target_link_libraries(gerador utilsLib)
 
-target_link_libraries(motor motorLib)
+target_link_libraries(motor motorUtils)
 target_link_libraries(motor Lib)
 target_link_libraries(motor utilsLib)
-target_link_libraries(motor structsUtils)
+
 
 
 
@@ -93,5 +95,5 @@ if  (WIN32)
 	set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT motor)
 
 else (WIN32) #Linux and Mac
-	target_link_libraries(motor ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
+	target_link_libraries(motor ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} ${GLEW_LIBRARIES} )
 endif(WIN32)

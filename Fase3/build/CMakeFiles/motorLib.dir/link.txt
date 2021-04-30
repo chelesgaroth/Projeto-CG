@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmotorLib.a  CMakeFiles/motorLib.dir/src/Motor/MotorUtils/drawFunctions.cpp.o
+/usr/bin/ranlib libmotorLib.a

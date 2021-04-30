@@ -6,9 +6,11 @@
 #include <GL/glut.h>
 #endif
 #include <tgmath.h>
-#include "drawFunctions.hpp"
-#include "../Structs/groupUtils.hpp"
+#include "MotorUtils/headers/drawFunctions.hpp"
+#include "MotorUtils/headers/groupStruct.hpp"
 #include "../tinyXML/tinyxml.h"
+#include "MotorUtils/headers/catmullrom.hpp"
+#include "../Utils/headers/matrixAux.hpp"
 
 
 using namespace draw;
@@ -25,29 +27,35 @@ float cameraMoves[3];
 GLuint buffers[1];
 std::vector<float> pontosVBO;
 size_t vboRead = 0;
-//float alfa = 0.0f, beta = 0.0f, radius = 15.0f; // variaveis camera1
+float alfa = 0.0f, beta = 0.0f, radius = 15.0f; // variaveis camera1
+int startX, startY, tracking = 0;
+int start;
+
+float aux_y[3] = {0,1,0};
 
 // variaveis camera2
+/*
 float xrot = 0; float yrot = 0; float angle = 0.0; 
 float lastx, lasty;
-bool valid = false;
+bool valid = false;*/
 
 // Movimentar camera2 no referencial
+/*
 void camera(void) {
     glRotatef(xrot, 1.0, 0.0, 0.0);  //rotate our camera on the x - axis(up and down)
     glRotatef(yrot, 0.0, 1.0, 0.0);  //rotate our camera on the y - axis(left and right)
     glTranslated(-cameraMoves[0], -cameraMoves[1], -cameraMoves[2]); //translate the screen to the position of our camera
 }
+*/
 
-
-/* Calculo das coordenadas camera1
+ //Calculo das coordenadas camera1
 void spherical2Cartesian() {
 
     cameraMoves[0] = radius * cos(beta) * sin(alfa);
     cameraMoves[1] = radius * sin(beta);
     cameraMoves[2] = radius * cos(beta) * cos(alfa);
 }
-*/
+
 
 void changeSize(int w, int h)
 {
@@ -68,8 +76,30 @@ void changeSize(int w, int h)
     // return to the model view matrix mode
     glMatrixMode(GL_MODELVIEW);
 }
+/*
+int getTimeVectorIndex(size_t cpSize, int timeT) {
+    float deltaTimeT = (float)timeT * 1000 / (float)cpSize;
+    int timeInstant = glutGet(GLUT_ELAPSED_TIME);
+    float time = 0.0f;
+    size_t index = 0;
 
-void drawFigures(group g) {
+    if (timeInstant > timeT*1000)
+        timeInstant = start;
+
+    while (time < timeInstant && index < cpSize-1) {
+        time += deltaTimeT;
+        index++;
+    }
+
+
+    printf("i: %d", index);
+    printf("delta: %d", timeInstant);
+    printf("time: %f\n", time);
+
+    return index;
+}*/
+
+void drawFigures(group g) {  //mudar o nome da função:  transforms_group
     glPushMatrix();
     for (transform t : g.getTransforms()) {
         switch (t.getType()) {
@@ -89,12 +119,62 @@ void drawFigures(group g) {
                 break;
         }
     }
+    for (transfTime t : g.getCurvas()) {
         
-    glBindBuffer(GL_ARRAY_BUFFER, buffers[0]);
-    glVertexPointer(3, GL_FLOAT, 0, 0);
-    glDrawArrays(GL_TRIANGLES, vboRead, g.getFSizes());
-    vboRead += g.getFSizes();
+        if (t.getType() == transtype::translate) {
+            std::vector<utils::point> pontos = t.getCurvePoints();
+            // Desenhar a curva => drawFunctions.cpp
+            glPushMatrix();
+            glBegin(GL_LINES);
+            for (size_t i = 0; i < pontos.size() - 1; i++) {
+                float pos1[3] = { pontos[i].x, pontos[i].y, pontos[i].z };
+                glVertex3fv(pos1);
+                float pos2[3] = { pontos[i + 1].x, pontos[i + 1].y, pontos[i + 1].z };
+                glVertex3fv(pos2);
+            }
+            glEnd();
+            glPopMatrix();
+            // Escolher um ponto da curva
+           /* int index = getTimeVectorIndex(pontos.size(), t.getTime());
+            utils::point pontoT = pontos[index];
+            glTranslatef(pontoT.x, pontoT.y, pontoT.z);*/
+            float pos[3] = { 0.0, 0.0, 0.0 };
+            float deriv[3] = { 0.0, 0.0, 0.0 };
 
+            float timeT = ((float) glutGet(GLUT_ELAPSED_TIME) / 1000) / (float)(t.getTime());
+            catmull::getGlobalCatmullRomPoint(&t, timeT, (float*)pos, (float*)deriv);
+
+            float m[4][4];
+            float x[3], z[3];
+
+            glTranslatef(pos[0], pos[1], pos[2]);
+            matrixUtils::cross(deriv, aux_y, z);
+            matrixUtils::cross(z, deriv, aux_y);
+
+            matrixUtils::normalize(deriv);
+            matrixUtils::normalize(aux_y);
+            matrixUtils::normalize(z);
+
+            matrixUtils::buildRotMatrix(deriv, aux_y, z, *m);
+
+            glMultMatrixf(*m);
+
+        }
+        else if(t.getType() == transtype::rotate){
+            float angle = (((float)glutGet(GLUT_ELAPSED_TIME) / 1000) * 360) / (float)t.getTime();
+            glRotatef(angle, t.getX(),t.getY(),t.getZ());
+        }
+    }
+    
+    // Meter no drawFunctions => draw_VBO()
+    if(g.getFSizes()!=0){
+        glBindBuffer(GL_ARRAY_BUFFER, buffers[0]);
+        glVertexPointer(3, GL_FLOAT, 0, 0);
+        glDrawArrays(GL_TRIANGLES, vboRead, g.getFSizes());
+        vboRead += g.getFSizes();
+    }
+
+    
     for (group gr : g.getFilhos()) {
         drawFigures(gr);
     }
@@ -109,19 +189,19 @@ void renderScene(void){
     // set camera
     glLoadIdentity();
 
-    /* Para definir a camera1
+     //Para definir a camera1
     gluLookAt(cameraMoves[0], cameraMoves[1], cameraMoves[2],
               0.0f, 0.0f, 0.0f,
               0.0f, 1.0f, 0.0f);
-              */
-
-    camera();
-    drawReferencial();
-
+              
+    // Para definir a camera2
+    // camera();
+ 
+    //drawReferencial();
     
-
     drawFigures(grupo);
     vboRead = 0;
+
 
     // End of frame
     glutSwapBuffers();
@@ -163,7 +243,7 @@ group lerFicheiro3D(string file, group g) {
     else{
         std::cout << "Can't open file!"<< std::endl;
     }
-    
+
     return g;
 }
 
@@ -175,7 +255,7 @@ group lerFicheiro3D(string file, group g) {
  */
 group parseGroupXML(TiXmlElement* gr, group g){
     float x, y, z, angle;
-    int translate =0, rotate=0, scale=0, color=0, models=0;
+    int translate =0, rotate=0, scale=0, color=0, models=0, translateTime = 0, rotateTime=0;
     int time = 0;
 
     //Anda por cada elemento filho do <group>
@@ -185,58 +265,73 @@ group parseGroupXML(TiXmlElement* gr, group g){
         //Caso o filho seja <transform>
         if(strcmp(elem->Value(),"translate")==0){
 
-            if (translate==1){
-                validate=1;
-                printf("ERRO TRANSLATE - Couldn't parse XML file\n");
-                return g;
-            }
-            else {
-                if (elem->Attribute("time")) {
-
-                    time = int(elem->Attribute("time"));
-                    TiXmlElement* point = elem->FirstChildElement("point");
+            if (elem->Attribute("time")) {
+                if (translateTime == 1) {
+                    validate = 1;
+                    printf("ERRO TRANSLATE TIME - Couldn't parse XML file\n");
+                    return g;
+                } else {
+                    time = atoi(elem->Attribute("time"));
+                    printf("time: %d\n", time);
+                    TiXmlElement *point = elem->FirstChildElement("point");
                     std::vector<utils::point> pontos;
                     while (point) {
                         utils::point p;
                         p.x = atof(point->Attribute("X"));
                         p.y = atof(point->Attribute("Y"));
                         p.z = atof(point->Attribute("Z"));
-
                         pontos.push_back(p);
                         //next sibling
                         point = point->NextSiblingElement("point");
                     }
-                    tTime.setTranslateTime(transtype::translate, time, pontos);
+                    tTime.setTranslateTime(time, pontos);
+                    tTime.setCurvePoints();
                     g.addCurva(tTime);
-                    
+                    translateTime = 1;
                 }
-                else {
+            }
+            else {
+                if (translate==1){
+                    validate=1;
+                    printf("ERRO TRANSLATE - Couldn't parse XML file\n");
+                    return g;
+                }
+                else{
                     x = atof(elem->Attribute("X"));
                     y = atof(elem->Attribute("Y"));
                     z = atof(elem->Attribute("Z"));
                     t.setTransform(x, y, z, 0, transtype::translate);
                     g.addTransform(t);
+                    translate = 1;
                 }
-                translate = 1;
+
             }
 
         }
         else if(strcmp(elem->Value(),"rotate")==0){
 
-            if (rotate==1){
-                validate=1;
-                printf("ERRO ROTATE - Couldn't parse XML file\n");
-                return g;
-            }
-            else {
-                if (elem->Attribute("time")) {
-                    time = int(elem->Attribute("time"));
+            if (elem->Attribute("time")) {
+                if (rotateTime==1){
+                    validate=1;
+                    printf("ERRO ROTATE TIME- Couldn't parse XML file\n");
+                    return g;
+                }
+                else {
+                    time = atoi(elem->Attribute("time"));
                     x = atof(elem->Attribute("axisX"));
                     y = atof(elem->Attribute("axisY"));
                     z = atof(elem->Attribute("axisZ"));
 
-                    tTime.setRotateTime(transtype::rotate, time, x, y, z);
+                    tTime.setRotateTime(time, x, y, z);
                     g.addCurva(tTime);
+                    rotateTime = 1;
+                }
+            }
+            else {
+                if (rotate==1){
+                    validate=1;
+                    printf("ERRO ROTATE - Couldn't parse XML file\n");
+                    return g;
                 }
                 else {
                     angle = atof(elem->Attribute("angle"));
@@ -246,10 +341,9 @@ group parseGroupXML(TiXmlElement* gr, group g){
 
                     t.setTransform(x, y, z, angle, transtype::rotate);
                     g.addTransform(t);
+                    rotate = 1;
                 }
-                rotate=1;
             }
-
         }
         else if(strcmp(elem->Value(),"scale")==0){
 
@@ -326,7 +420,7 @@ int lerFicheiroXML(std::string xml){
 
     if (b) {
         TiXmlElement* root = f.RootElement();
-        
+
         grupo = parseGroupXML(root, grupo);
         if (validate==1) return -1;
     }
@@ -336,80 +430,83 @@ int lerFicheiroXML(std::string xml){
     }
     return 0;
 }
-/* Aproximar/afastar camera1
-void nextFigureKey (unsigned char key, int x, int y){
 
-    switch (key) {
-        /* --- Map de figuras ---
-        case 'd':
-            if(ativarFig<(figurasMap.size()-1)){
-                ativarFig++;
-                renderScene();
-            }
-            break;
-        case 'a':
-            if(ativarFig>0){
-                ativarFig--;
-                renderScene();
-            }
-            break;*/
-            /*
-        case 'w':
-            radius -= 0.1f;
-            if (radius < 0.1f)
-                radius = 0.1f;
-            spherical2Cartesian();
-            renderScene();
-            break;
 
-        case 's':
-            radius += 0.1f;
-            spherical2Cartesian();
-            renderScene();
-            break;
-        default:
-            break;
+
+void processMouseButtons(int button, int state, int xx, int yy) {
+
+    if (state == GLUT_DOWN) {
+        startX = xx;
+        startY = yy;
+        if (button == GLUT_LEFT_BUTTON)
+            tracking = 1;
+        else if (button == GLUT_RIGHT_BUTTON)
+            tracking = 2;
+        else
+            tracking = 0;
+    }
+    else if (state == GLUT_UP) {
+        
+        if (tracking == 1) {
+            alfa += (xx - startX);
+            beta += (yy - startY);
+        }
+        else if (tracking == 2) {
+
+            radius -= yy - startY;
+            if (radius < 3)
+                radius = 3.0;
+        }
+        
+        tracking = 0;
     }
 
 }
-*/
 
-/* Rodar camera1
-void processSpecialKeys(int key, int xx, int yy) {
 
-    switch (key) {
+void processMouseMotion(int xx, int yy) {
 
-        case GLUT_KEY_RIGHT:
-            alfa += 0.1; break;
+    int deltaX, deltaY;
+    int alphaAux, betaAux;
+    int rAux;
 
-        case GLUT_KEY_LEFT:
-            alfa -= 0.1; break;
+    if (!tracking)
+        return;
 
-        case GLUT_KEY_UP:
-            beta += 0.1f;
-            if (beta > 1.5f)
-                beta = 1.5f;
-            break;
+    deltaX = xx - startX;
+    deltaY = yy - startY;
 
-        case GLUT_KEY_DOWN:
-            beta -= 0.1f;
-            if (beta < -1.5f)
-                beta = -1.5f;
-            break;
+    if (tracking == 1) {
 
-        case GLUT_KEY_PAGE_DOWN: radius -= 0.1f;
-            if (radius < 0.1f)
-                radius = 0.1f;
-            break;
 
-        case GLUT_KEY_PAGE_UP: radius += 0.1f; break;
+        alphaAux = alfa + deltaX;
+        betaAux = beta + deltaY;
+
+        if (betaAux > 85.0)
+            betaAux = 85.0;
+        else if (betaAux < -85.0)
+            betaAux = -85.0;
+
+        rAux = radius;
     }
-    spherical2Cartesian();
+    else if (tracking == 2) {
+
+        alphaAux = alfa;
+        betaAux = beta;
+        rAux = radius - deltaY;
+        if (rAux < 3)
+            rAux = 3;
+    }
+
+    cameraMoves[0] = rAux * sin(alphaAux * 3.14 / 180.0) * cos(betaAux * 3.14 / 180.0);
+    cameraMoves[2] = rAux * cos(alphaAux * 3.14 / 180.0) * cos(betaAux * 3.14 / 180.0);
+    cameraMoves[1] = rAux * sin(betaAux * 3.14 / 180.0);
     glutPostRedisplay();
-
 }
-*/
+
+
 // Movimentar camera2
+/*
 void keyboard(unsigned char key, int x, int y) {
     if (key == 'r') // subir
     {
@@ -466,8 +563,9 @@ void mouse_func(int button, int state, int x, int y) {
     lasty = y;
     valid = state == GLUT_DOWN;
 }
-
+*/
 // Rodar a camera2
+/*
 void mouseMovement(int x, int y) {
     if (valid) {
         int diffx = x - lastx; //check the difference between the current xand the last x position
@@ -485,7 +583,7 @@ void mouseMovement(int x, int y) {
         glutPostRedisplay();
     }
 }
-
+*/
 
 
 int main(int argc, char** argv){
@@ -500,7 +598,7 @@ int main(int argc, char** argv){
         if (lerFicheiroXML(argv[1]) == 0) {
             
             // Inicializar posicao da camera1
-            //spherical2Cartesian();
+            spherical2Cartesian();
 
             // Inicializar posicao da camera2
             cameraMoves[0] = 0;
@@ -518,11 +616,13 @@ int main(int argc, char** argv){
             // put callback registry here
             glutDisplayFunc(renderScene);
             glutReshapeFunc(changeSize);
+            glutIdleFunc(renderScene);
 
-            glutKeyboardFunc(keyboard);
-            //glutSpecialFunc(processSpecialKeys); // para utilizar camera1
-            glutMouseFunc(mouse_func);
-            glutMotionFunc(mouseMovement);
+
+            glutMouseFunc(processMouseButtons); // para utilizar camera1
+            glutMotionFunc(processMouseMotion); // para utilizar camera1
+            //glutMouseFunc(mouse_func);        // para utilizar camera2
+            //glutMotionFunc(mouseMovement);    // para utilizar camera2
             #ifndef __APPLE__
                 glewInit();
             #endif
@@ -536,8 +636,8 @@ int main(int argc, char** argv){
             glEnable(GL_DEPTH_TEST);
             glEnable(GL_CULL_FACE);
             glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-
             // enter GLUT�s main cycle
+            start = glutGet(GLUT_ELAPSED_TIME);
             glutMainLoop();
         }
     }

@@ -1,0 +1,98 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/catmullrom.hpp
+transforms.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/transforms.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/drawFunctions.hpp
+../../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+GLUT/glut.h
+-
+GL/glut.h
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/groupStruct.hpp
+../../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+transforms.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/transforms.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/transforms.hpp
+../../../Utils/headers/pointFigure.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/motor.cpp
+stdlib.h
+-
+GLUT/glut.h
+-
+GL/glew.h
+-
+GL/glut.h
+-
+tgmath.h
+-
+MotorUtils/headers/drawFunctions.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/drawFunctions.hpp
+MotorUtils/headers/groupStruct.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/groupStruct.hpp
+../tinyXML/tinyxml.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/tinyXML/tinyxml.h
+MotorUtils/headers/catmullrom.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/catmullrom.hpp
+../Utils/headers/matrixAux.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
+cstdio
+-
+cstdlib
+-
+vector
+-
+string
+-
+iostream
+-
+fstream
+-
+sstream
+-
+map
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/tinyXML/tinystr.h
+assert.h
+-
+string.h
+-
+
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/tinyXML/tinyxml.h
+ctype.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+string
+-
+iostream
+-
+sstream
+-
+tinystr.h
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/tinyXML/tinystr.h
+
