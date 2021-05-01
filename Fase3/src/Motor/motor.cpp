@@ -76,28 +76,7 @@ void changeSize(int w, int h)
     // return to the model view matrix mode
     glMatrixMode(GL_MODELVIEW);
 }
-/*
-int getTimeVectorIndex(size_t cpSize, int timeT) {
-    float deltaTimeT = (float)timeT * 1000 / (float)cpSize;
-    int timeInstant = glutGet(GLUT_ELAPSED_TIME);
-    float time = 0.0f;
-    size_t index = 0;
 
-    if (timeInstant > timeT*1000)
-        timeInstant = start;
-
-    while (time < timeInstant && index < cpSize-1) {
-        time += deltaTimeT;
-        index++;
-    }
-
-
-    printf("i: %d", index);
-    printf("delta: %d", timeInstant);
-    printf("time: %f\n", time);
-
-    return index;
-}*/
 
 void drawFigures(group g) {  //mudar o nome da função:  transforms_group
     glPushMatrix();
@@ -125,38 +104,26 @@ void drawFigures(group g) {  //mudar o nome da função:  transforms_group
             std::vector<utils::point> pontos = t.getCurvePoints();
             // Desenhar a curva => drawFunctions.cpp
             glPushMatrix();
-            glBegin(GL_LINES);
-            for (size_t i = 0; i < pontos.size() - 1; i++) {
-                float pos1[3] = { pontos[i].x, pontos[i].y, pontos[i].z };
-                glVertex3fv(pos1);
-                float pos2[3] = { pontos[i + 1].x, pontos[i + 1].y, pontos[i + 1].z };
-                glVertex3fv(pos2);
-            }
-            glEnd();
+            drawCatmull(pontos);
             glPopMatrix();
             // Escolher um ponto da curva
-           /* int index = getTimeVectorIndex(pontos.size(), t.getTime());
-            utils::point pontoT = pontos[index];
-            glTranslatef(pontoT.x, pontoT.y, pontoT.z);*/
             float pos[3] = { 0.0, 0.0, 0.0 };
             float deriv[3] = { 0.0, 0.0, 0.0 };
 
             float timeT = ((float) glutGet(GLUT_ELAPSED_TIME) / 1000) / (float)(t.getTime());
             catmull::getGlobalCatmullRomPoint(&t, timeT, (float*)pos, (float*)deriv);
 
+            glTranslatef(pos[0], pos[1], pos[2]);
+
             float m[4][4];
             float x[3], z[3];
 
-            glTranslatef(pos[0], pos[1], pos[2]);
             matrixUtils::cross(deriv, aux_y, z);
             matrixUtils::cross(z, deriv, aux_y);
-
             matrixUtils::normalize(deriv);
             matrixUtils::normalize(aux_y);
             matrixUtils::normalize(z);
-
             matrixUtils::buildRotMatrix(deriv, aux_y, z, *m);
-
             glMultMatrixf(*m);
 
         }
@@ -166,14 +133,13 @@ void drawFigures(group g) {  //mudar o nome da função:  transforms_group
         }
     }
     
-    // Meter no drawFunctions => draw_VBO()
+    //draw_VBO
     if(g.getFSizes()!=0){
         glBindBuffer(GL_ARRAY_BUFFER, buffers[0]);
         glVertexPointer(3, GL_FLOAT, 0, 0);
         glDrawArrays(GL_TRIANGLES, vboRead, g.getFSizes());
         vboRead += g.getFSizes();
     }
-
     
     for (group gr : g.getFilhos()) {
         drawFigures(gr);

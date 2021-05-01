@@ -14,5 +14,6 @@ namespace draw {
 
     void drawFigure(utils::figure);
     void drawReferencial();
+    void drawCatmull(std::vector<utils::point>);
 
 }

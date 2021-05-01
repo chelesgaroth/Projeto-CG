@@ -6,25 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/catmullrom.cpp
-cmath
--
-../../Utils/headers/pointFigure.hpp
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
-../../Utils/headers/matrixAux.hpp
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
-headers/catmullrom.hpp
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/catmullrom.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/drawFunctions.cpp
+headers/drawFunctions.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/drawFunctions.hpp
 
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/catmullrom.hpp
-transforms.hpp
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/transforms.hpp
-
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/transforms.hpp
+/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Motor/MotorUtils/headers/drawFunctions.hpp
 ../../../Utils/headers/pointFigure.hpp
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
-
-/home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/matrixAux.hpp
+GLUT/glut.h
+-
+GL/glut.h
+-
 
 /home/raquel/Desktop/Universidade/2º Semestre/CG/Fase3/src/Utils/headers/pointFigure.hpp
 cstdio
