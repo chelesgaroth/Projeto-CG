@@ -14,6 +14,9 @@ $ make
 ```bash
 ./motor sistemaSolar.xml
 ```
+
+Nota Final: 17
+
 ## Authors
 * [Ana Filipa Pereira](https://github.com/FilipaPereira00)
 * [Carolina Santejo](https://github.com/CarolinaSantejo)
